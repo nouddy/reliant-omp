@@ -1,0 +1,93 @@
+[5/31/2024 3:09:03 PM] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[5/31/2024 3:09:03 PM] [DEBUG] mysql_connect_file("mysql.ini")
+[5/31/2024 3:09:03 PM] [DEBUG] CHandleManager::CreateFromFile(this=0x37c5cb8, file_path='mysql.ini')
+[5/31/2024 3:09:03 PM] [INFO] Options instance with id '1' successfully created.
+[5/31/2024 3:09:03 PM] [DEBUG] CHandleManager::CreateFromFile - new options = 0x37c7218 (id '1')
+[5/31/2024 3:09:03 PM] [DEBUG] CHandleManager::Create(this=0x37c5cb8, host='localhost', user='root', pass='****', db='reliant', options=0x37c7218)
+[5/31/2024 3:09:03 PM] [INFO] Creating new connection handle...
+[5/31/2024 3:09:03 PM] [WARNING] mysql_connect_file: no password specified
+[5/31/2024 3:09:03 PM] [DEBUG] CConnection::CConnection(this=0x2a5d340, host='localhost', user='root', passw='****', db='reliant', options=0x37c7218)
+[5/31/2024 3:09:03 PM] [DEBUG] CConnection::CConnection - new connection = 0x2a59638
+[5/31/2024 3:09:03 PM] [DEBUG] CConnection::CConnection(this=0x8609020, host='localhost', user='root', passw='****', db='reliant', options=0x37c7218)
+[5/31/2024 3:09:03 PM] [DEBUG] CConnection::CConnection - new connection = 0x37c8bb8
+[5/31/2024 3:09:03 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x8609020, connection=0x8609020)
+[5/31/2024 3:09:03 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x8609020, connection=0x8609020)
+[5/31/2024 3:09:03 PM] [DEBUG] CConnectionPool::CConnectionPool(size=2, this=0x2a5d5c0)
+[5/31/2024 3:09:03 PM] [DEBUG] CConnection::CConnection(this=0x87d6020, host='localhost', user='root', passw='****', db='reliant', options=0x37c7218)
+[5/31/2024 3:09:03 PM] [DEBUG] CConnection::CConnection - new connection = 0x35f9928
+[5/31/2024 3:09:03 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x87d6020, connection=0x87d6020)
+[5/31/2024 3:09:03 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x87d6020, connection=0x87d6020)
+[5/31/2024 3:09:03 PM] [DEBUG] CConnection::CConnection(this=0x89ad020, host='localhost', user='root', passw='****', db='reliant', options=0x37c7218)
+[5/31/2024 3:09:03 PM] [DEBUG] CConnection::CConnection - new connection = 0x2d7bce8
+[5/31/2024 3:09:03 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x89ad020, connection=0x89ad020)
+[5/31/2024 3:09:03 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x89ad020, connection=0x89ad020)
+[5/31/2024 3:09:03 PM] [INFO] Connection handle with id '1' successfully created.
+[5/31/2024 3:09:03 PM] [DEBUG] CHandleManager::Create - new handle = 0x37c8420
+[5/31/2024 3:09:03 PM] [DEBUG] mysql_connect_file: return value: '1'
+[5/31/2024 3:09:03 PM] [DEBUG] mysql_errno(1)
+[5/31/2024 3:09:03 PM] [DEBUG] CHandle::GetErrorId(this=0x37c8420)
+[5/31/2024 3:09:03 PM] [DEBUG] CConnection::GetError(this=0x2a5d340, connection=0x2a59638)
+[5/31/2024 3:09:03 PM] [DEBUG] CHandle::GetErrorId - return value: true, error id: '0', error msg: ''
+[5/31/2024 3:09:03 PM] [DEBUG] mysql_errno: return value: '0'
+[5/31/2024 3:23:31 PM] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[5/31/2024 3:23:31 PM] [DEBUG] mysql_connect_file("mysql.ini")
+[5/31/2024 3:23:31 PM] [DEBUG] CHandleManager::CreateFromFile(this=0x4174428, file_path='mysql.ini')
+[5/31/2024 3:23:31 PM] [INFO] Options instance with id '1' successfully created.
+[5/31/2024 3:23:31 PM] [DEBUG] CHandleManager::CreateFromFile - new options = 0x42c5128 (id '1')
+[5/31/2024 3:23:31 PM] [DEBUG] CHandleManager::Create(this=0x4174428, host='localhost', user='root', pass='****', db='reliant', options=0x42c5128)
+[5/31/2024 3:23:31 PM] [INFO] Creating new connection handle...
+[5/31/2024 3:23:31 PM] [WARNING] mysql_connect_file: no password specified
+[5/31/2024 3:23:31 PM] [DEBUG] CConnection::CConnection(this=0x42c9158, host='localhost', user='root', passw='****', db='reliant', options=0x42c5128)
+[5/31/2024 3:23:31 PM] [DEBUG] CConnection::CConnection - new connection = 0x3ada748
+[5/31/2024 3:23:31 PM] [DEBUG] CConnection::CConnection(this=0x8c75020, host='localhost', user='root', passw='****', db='reliant', options=0x42c5128)
+[5/31/2024 3:23:31 PM] [DEBUG] CConnection::CConnection - new connection = 0x31ae6b8
+[5/31/2024 3:23:31 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x8c75020, connection=0x8c75020)
+[5/31/2024 3:23:31 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x8c75020, connection=0x8c75020)
+[5/31/2024 3:23:31 PM] [DEBUG] CConnectionPool::CConnectionPool(size=2, this=0x42c9198)
+[5/31/2024 3:23:31 PM] [DEBUG] CConnection::CConnection(this=0x8e4d020, host='localhost', user='root', passw='****', db='reliant', options=0x42c5128)
+[5/31/2024 3:23:31 PM] [DEBUG] CConnection::CConnection - new connection = 0x32089f8
+[5/31/2024 3:23:31 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x8e4d020, connection=0x8e4d020)
+[5/31/2024 3:23:31 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x8e4d020, connection=0x8e4d020)
+[5/31/2024 3:23:31 PM] [DEBUG] CConnection::CConnection(this=0x901e020, host='localhost', user='root', passw='****', db='reliant', options=0x42c5128)
+[5/31/2024 3:23:31 PM] [DEBUG] CConnection::CConnection - new connection = 0x1438238
+[5/31/2024 3:23:31 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x901e020, connection=0x901e020)
+[5/31/2024 3:23:31 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x901e020, connection=0x901e020)
+[5/31/2024 3:23:31 PM] [INFO] Connection handle with id '1' successfully created.
+[5/31/2024 3:23:31 PM] [DEBUG] CHandleManager::Create - new handle = 0x3ad4500
+[5/31/2024 3:23:31 PM] [DEBUG] mysql_connect_file: return value: '1'
+[5/31/2024 3:23:31 PM] [DEBUG] mysql_errno(1)
+[5/31/2024 3:23:31 PM] [DEBUG] CHandle::GetErrorId(this=0x3ad4500)
+[5/31/2024 3:23:31 PM] [DEBUG] CConnection::GetError(this=0x42c9158, connection=0x3ada748)
+[5/31/2024 3:23:31 PM] [DEBUG] CHandle::GetErrorId - return value: true, error id: '0', error msg: ''
+[5/31/2024 3:23:31 PM] [DEBUG] mysql_errno: return value: '0'
+[5/31/2024 3:25:00 PM] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[5/31/2024 3:25:00 PM] [DEBUG] mysql_connect_file("mysql.ini")
+[5/31/2024 3:25:00 PM] [DEBUG] CHandleManager::CreateFromFile(this=0x3db95d0, file_path='mysql.ini')
+[5/31/2024 3:25:00 PM] [INFO] Options instance with id '1' successfully created.
+[5/31/2024 3:25:00 PM] [DEBUG] CHandleManager::CreateFromFile - new options = 0x45b30d8 (id '1')
+[5/31/2024 3:25:00 PM] [DEBUG] CHandleManager::Create(this=0x3db95d0, host='localhost', user='root', pass='****', db='reliant', options=0x45b30d8)
+[5/31/2024 3:25:00 PM] [INFO] Creating new connection handle...
+[5/31/2024 3:25:00 PM] [WARNING] mysql_connect_file: no password specified
+[5/31/2024 3:25:00 PM] [DEBUG] CConnection::CConnection(this=0x45b74a8, host='localhost', user='root', passw='****', db='reliant', options=0x45b30d8)
+[5/31/2024 3:25:00 PM] [DEBUG] CConnection::CConnection - new connection = 0x348ea38
+[5/31/2024 3:25:00 PM] [DEBUG] CConnection::CConnection(this=0x8e77020, host='localhost', user='root', passw='****', db='reliant', options=0x45b30d8)
+[5/31/2024 3:25:00 PM] [DEBUG] CConnection::CConnection - new connection = 0x43f1288
+[5/31/2024 3:25:00 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x8e77020, connection=0x8e77020)
+[5/31/2024 3:25:00 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x8e77020, connection=0x8e77020)
+[5/31/2024 3:25:00 PM] [DEBUG] CConnectionPool::CConnectionPool(size=2, this=0x45b75e8)
+[5/31/2024 3:25:00 PM] [DEBUG] CConnection::CConnection(this=0x9049020, host='localhost', user='root', passw='****', db='reliant', options=0x45b30d8)
+[5/31/2024 3:25:00 PM] [DEBUG] CConnection::CConnection - new connection = 0x43f2098
+[5/31/2024 3:25:00 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x9049020, connection=0x9049020)
+[5/31/2024 3:25:00 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x9049020, connection=0x9049020)
+[5/31/2024 3:25:00 PM] [DEBUG] CConnection::CConnection(this=0x921f020, host='localhost', user='root', passw='****', db='reliant', options=0x45b30d8)
+[5/31/2024 3:25:00 PM] [DEBUG] CConnection::CConnection - new connection = 0x400cd90
+[5/31/2024 3:25:00 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x921f020, connection=0x921f020)
+[5/31/2024 3:25:00 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x921f020, connection=0x921f020)
+[5/31/2024 3:25:00 PM] [INFO] Connection handle with id '1' successfully created.
+[5/31/2024 3:25:00 PM] [DEBUG] CHandleManager::Create - new handle = 0x3486c50
+[5/31/2024 3:25:00 PM] [DEBUG] mysql_connect_file: return value: '1'
+[5/31/2024 3:25:00 PM] [DEBUG] mysql_errno(1)
+[5/31/2024 3:25:00 PM] [DEBUG] CHandle::GetErrorId(this=0x3486c50)
+[5/31/2024 3:25:00 PM] [DEBUG] CConnection::GetError(this=0x45b74a8, connection=0x348ea38)
+[5/31/2024 3:25:00 PM] [DEBUG] CHandle::GetErrorId - return value: true, error id: '0', error msg: ''
+[5/31/2024 3:25:00 PM] [DEBUG] mysql_errno: return value: '0'

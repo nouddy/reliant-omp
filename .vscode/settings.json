@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "*.pwn": "pawn",
+        "*.inc": "pawn",
+        "*.tde": "pawn",
+        "*.aio": "pawn",
+        "*.map": "pawn",
+        "*.job": "pawn",
+        "*.script": "pawn",
+        "*.stock": "pawn",
+        "*.csso": "pawn",
+        "*.temp": "pawn",
+        "*.asset": "pawn",
+        "*entrance": "pawn"
+    },
+    "files.encoding": "windows1252",
+    "isGitignoreExtActive": true,
+}
