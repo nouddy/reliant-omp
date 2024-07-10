@@ -65,7 +65,7 @@ public mysql_LoadQuestions(playerid) {
             cache_get_value_name(i, "Date", qDate, 36);
         
             format(dialogStr, sizeof dialogStr, "{737be1}%s%s {ffffff}| %s | {daa520}%s\n", dialogStr, ReturnPlayerName(pID), questionSTR, qDate);
-            Dialog_Show(playerid, "dialog_Questions", DIALOG_STYLE_LIST, "Naslov", dialogStr, "Ok", "Ok");
+            Dialog_Show(playerid, "dialog_Questions", DIALOG_STYLE_LIST, "Questions", dialogStr, "Odaberi", "Odustani");
         }
     }
     return(true);
@@ -81,6 +81,8 @@ hook OnGameModeInit() {
 hook OnPlayerConnect(playerid) {
 
     //*         >> [ SAFETY CHECKS ] << 
+
+    answeringQuestion[playerid] = -1;
 
     if(IsValidVehicle(staffVehicle[playerid]))
         DestroyVehicle(staffVehicle[playerid]);
@@ -210,6 +212,8 @@ YCMD:questions(playerid, params[], help)
 }
 
 Dialog:dialog_Questions(const playerid, response, listitem, string: inputtext[]) {
+
+    if(!response) return (true);
 
     new qID = listitem;
     answeringQuestion[playerid] = qID;
