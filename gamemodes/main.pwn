@@ -29,6 +29,21 @@
 #include <ylessinc\YSI_Visual\y_commands>
 #include <ylessinc\YSI_Data\y_foreach>
 #include <ylessinc\YSI_Data\y_iterate>
+#include <easyDialog>
+
+//*		>> [ COLOURS ] <<
+
+#define x_server		0x737be1FF
+#define x_red           0xFF0000FF
+#define x_orange        0xDAA520FF
+#define x_white			0xffffffff
+#define x_lblue			0x7DAEDFFF
+
+#define c_server		"{737be1}"
+#define c_red			"{ff0000}"
+#define c_orange		"{daa520}"
+#define c_white         "{ffffff}"
+#define c_lblue			"{7DAEDF}"
 
 main()
 {
@@ -59,6 +74,8 @@ public OnGameModeInit()
 	AllowInteriorWeapons(true);
 	EnableVehicleFriendlyFire();
 	EnableStuntBonusForAll(false);	
+
+	SetGameModeText("(R) - Drustvo se skupilo");
 
 	return 1;
 }
@@ -179,6 +196,7 @@ public OnActorStreamOut(actorid, forplayerid)
 
 public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
+
 	return 1;
 }
 
@@ -413,6 +431,21 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 }
 
 
-/* Custom Includes */
+//*			>> [ Custom Includes ] << 
 
 #include "modules/db_config.pwn"
+#include "modules/db_functions.pwn"
+
+//*			>> [ ACCOUNT ] <<
+
+#include "modules/main/account.pwn"
+
+//*			>> [ STAFF ] <<
+
+#include "modules/staff/functions.pwn"
+#include "modules/staff/staff.pwn"
+
+//*			>> [ VEHICLE ] <<
+
+#include "modules/vehicle/functions.pwn"
+#include "modules/vehicle/main.pwn"
