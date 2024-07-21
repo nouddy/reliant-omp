@@ -20862,3 +20862,397 @@
 [7/21/2024 1:27:59 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='TRUNCATE TABLE `staff_questions`')
 [7/21/2024 1:27:59 PM] [DEBUG] created new resultset '0x2e98b80'
 [7/21/2024 1:27:59 PM] [DEBUG] fetched MySQL result '0x0'
+[7/21/2024 1:32:28 PM] [DEBUG] mysql_format(1, 0x089C175C, 124, "SELECt * FROM `users` WHERE `username` = '%e' LIMIT 1")
+[7/21/2024 1:32:28 PM] [DEBUG] CHandle::EscapeString(this=0x402dee0, src='Ferid_Olsun')
+[7/21/2024 1:32:28 PM] [DEBUG] CConnection::EscapeString(src='Ferid_Olsun', this=0x3ead470, connection=0x2e9aff8)
+[7/21/2024 1:32:28 PM] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Ferid_Olsun'
+[7/21/2024 1:32:28 PM] [DEBUG] mysql_format: return value: '62'
+[7/21/2024 1:32:28 PM] [DEBUG] mysql_tquery(1, "SELECt * FROM `users` WHERE `username` = 'Ferid_Olsun' LIMIT 1", "mysql_CheckAccount", "d")
+[7/21/2024 1:32:28 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='mysql_CheckAccount', format='d', params=0x89c1744, param_offset=5)
+[7/21/2024 1:32:28 PM] [DEBUG] CCallback::Create - callback index for 'mysql_CheckAccount': 235
+[7/21/2024 1:32:28 PM] [DEBUG] processing specifier 'd' with parameter index 0
+[7/21/2024 1:32:28 PM] [DEBUG] retrieved and pushed value '0'
+[7/21/2024 1:32:28 PM] [INFO] Callback 'mysql_CheckAccount' set up for delayed execution.
+[7/21/2024 1:32:28 PM] [DEBUG] created delayed callback with 1 parameter
+[7/21/2024 1:32:28 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x957dbc8)
+[7/21/2024 1:32:28 PM] [DEBUG] CConnection::Execute(query=0x957dbc8, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:32:28 PM] [DEBUG] CQuery::Execute(this=0x957dbc8, connection=0x3013658)
+[7/21/2024 1:32:28 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:32:28 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:32:28 PM] [INFO] query "SELECt * FROM `users` WHERE `username` = 'Ferid_Olsun' LIMIT 1" successfully executed within 4.88 milliseconds
+[7/21/2024 1:32:28 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='SELECt * FROM `users` WHERE `username` = 'Ferid_Olsun' LIMIT 1')
+[7/21/2024 1:32:28 PM] [DEBUG] created new resultset '0x954dbd0'
+[7/21/2024 1:32:28 PM] [DEBUG] fetched MySQL result '0x9553820'
+[7/21/2024 1:32:28 PM] [DEBUG] allocated 108 bytes for PAWN result
+[7/21/2024 1:32:28 PM] [DEBUG] CCallback::Execute(amx=0x3eade80, index=235, num_params=1)
+[7/21/2024 1:32:28 PM] [INFO] Executing callback 'mysql_CheckAccount' with 1 parameter...
+[7/21/2024 1:32:28 PM] [DEBUG] processing internal specifier 'c'
+[7/21/2024 1:32:28 PM] [DEBUG] pushed value '0' onto AMX stack
+[7/21/2024 1:32:28 PM] [DEBUG] executing AMX callback with index '235'
+[7/21/2024 1:32:28 PM] [DEBUG] cache_get_row_count(0x089C19D0)
+[7/21/2024 1:32:28 PM] [DEBUG] cache_get_row_count: return value: '1'
+[7/21/2024 1:32:28 PM] [DEBUG] cache_get_value_name(0, "Password", 0x077732FC, 64)
+[7/21/2024 1:32:28 PM] [DEBUG] cache_get_value_name: assigned value: 'mojasifra.ba'
+[7/21/2024 1:32:28 PM] [DEBUG] cache_get_value_name: return value: '1'
+[7/21/2024 1:32:28 PM] [DEBUG] AMX callback executed with error '0'
+[7/21/2024 1:32:28 PM] [INFO] Callback successfully executed.
+[7/21/2024 1:32:32 PM] [DEBUG] mysql_format(1, 0x089C16D4, 128, "SELECT * FROM `users` WHERE `Username` = '%e' LIMIT 1")
+[7/21/2024 1:32:32 PM] [DEBUG] CHandle::EscapeString(this=0x402dee0, src='Ferid_Olsun')
+[7/21/2024 1:32:32 PM] [DEBUG] CConnection::EscapeString(src='Ferid_Olsun', this=0x3ead470, connection=0x2e9aff8)
+[7/21/2024 1:32:32 PM] [DEBUG] CHandle::EscapeString - return value: true, escaped string: 'Ferid_Olsun'
+[7/21/2024 1:32:32 PM] [DEBUG] mysql_format: return value: '62'
+[7/21/2024 1:32:32 PM] [DEBUG] mysql_tquery(1, "SELECT * FROM `users` WHERE `Username` = 'Ferid_Olsun' LIMIT 1", "mysql_LoadAccount", "d")
+[7/21/2024 1:32:32 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='mysql_LoadAccount', format='d', params=0x89c16bc, param_offset=5)
+[7/21/2024 1:32:32 PM] [DEBUG] CCallback::Create - callback index for 'mysql_LoadAccount': 237
+[7/21/2024 1:32:32 PM] [DEBUG] processing specifier 'd' with parameter index 0
+[7/21/2024 1:32:32 PM] [DEBUG] retrieved and pushed value '0'
+[7/21/2024 1:32:32 PM] [INFO] Callback 'mysql_LoadAccount' set up for delayed execution.
+[7/21/2024 1:32:32 PM] [DEBUG] created delayed callback with 1 parameter
+[7/21/2024 1:32:32 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x957d670)
+[7/21/2024 1:32:32 PM] [DEBUG] CConnection::Execute(query=0x957d670, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:32:32 PM] [DEBUG] CQuery::Execute(this=0x957d670, connection=0x3013658)
+[7/21/2024 1:32:32 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:32:32 PM] [INFO] query "SELECT * FROM `users` WHERE `Username` = 'Ferid_Olsun' LIMIT 1" successfully executed within 4.69 milliseconds
+[7/21/2024 1:32:32 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='SELECT * FROM `users` WHERE `Username` = 'Ferid_Olsun' LIMIT 1')
+[7/21/2024 1:32:32 PM] [DEBUG] created new resultset '0x954dc78'
+[7/21/2024 1:32:32 PM] [DEBUG] fetched MySQL result '0x95533a0'
+[7/21/2024 1:32:32 PM] [DEBUG] allocated 108 bytes for PAWN result
+[7/21/2024 1:32:32 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] CCallback::Execute(amx=0x3eade80, index=237, num_params=1)
+[7/21/2024 1:32:32 PM] [INFO] Executing callback 'mysql_LoadAccount' with 1 parameter...
+[7/21/2024 1:32:32 PM] [DEBUG] processing internal specifier 'c'
+[7/21/2024 1:32:32 PM] [DEBUG] pushed value '0' onto AMX stack
+[7/21/2024 1:32:32 PM] [DEBUG] executing AMX callback with index '237'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_row_count(0x089C19D0)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_row_count: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(0, "ID", 0x077732F8)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '4'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name(0, "Username", 0x077733FC, 24)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name: assigned value: 'Ferid_Olsun'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(0, "Age", 0x0777345C)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '17'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(0, "Gender", 0x07773460)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name(0, "eMail", 0x07773464, 128)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name: assigned value: 'ferid.olsun@arbih.rs'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(0, "Score", 0x07773664)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(0, "Skin", 0x07773668)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '116'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(0, "Staff", 0x0777366C)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '4'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] mysql_format(1, 0x089C17B8, 124, "SELECT * FROM `inventory` WHERE `PlayerID` = %d LIMIT 35")
+[7/21/2024 1:32:32 PM] [DEBUG] mysql_format: return value: '55'
+[7/21/2024 1:32:32 PM] [DEBUG] mysql_tquery(1, "SELECT * FROM `inventory` WHERE `PlayerID` = 4 LIMIT 35", "mysql_CheckPlayerInventory", "d")
+[7/21/2024 1:32:32 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='mysql_CheckPlayerInventory', format='d', params=0x89c17a0, param_offset=5)
+[7/21/2024 1:32:32 PM] [DEBUG] CCallback::Create - callback index for 'mysql_CheckPlayerInventory': 236
+[7/21/2024 1:32:32 PM] [DEBUG] processing specifier 'd' with parameter index 0
+[7/21/2024 1:32:32 PM] [DEBUG] retrieved and pushed value '0'
+[7/21/2024 1:32:32 PM] [INFO] Callback 'mysql_CheckPlayerInventory' set up for delayed execution.
+[7/21/2024 1:32:32 PM] [DEBUG] created delayed callback with 1 parameter
+[7/21/2024 1:32:32 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x957dc60)
+[7/21/2024 1:32:32 PM] [DEBUG] CConnection::Execute(query=0x957dc60, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:32:32 PM] [DEBUG] CQuery::Execute(this=0x957dc60, connection=0x3013658)
+[7/21/2024 1:32:32 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:32:32 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] AMX callback executed with error '0'
+[7/21/2024 1:32:32 PM] [INFO] Callback successfully executed.
+[7/21/2024 1:32:32 PM] [INFO] query "SELECT * FROM `inventory` WHERE `PlayerID` = 4 LIMIT 35" successfully executed within 9.773 milliseconds
+[7/21/2024 1:32:32 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='SELECT * FROM `inventory` WHERE `PlayerID` = 4 LIMIT 35')
+[7/21/2024 1:32:32 PM] [DEBUG] created new resultset '0x954d8f8'
+[7/21/2024 1:32:32 PM] [DEBUG] fetched MySQL result '0x38e8ff0'
+[7/21/2024 1:32:32 PM] [DEBUG] allocated 144 bytes for PAWN result
+[7/21/2024 1:32:32 PM] [DEBUG] CCallback::Execute(amx=0x3eade80, index=236, num_params=1)
+[7/21/2024 1:32:32 PM] [INFO] Executing callback 'mysql_CheckPlayerInventory' with 1 parameter...
+[7/21/2024 1:32:32 PM] [DEBUG] processing internal specifier 'c'
+[7/21/2024 1:32:32 PM] [DEBUG] pushed value '0' onto AMX stack
+[7/21/2024 1:32:32 PM] [DEBUG] executing AMX callback with index '236'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_row_count(0x089C19D0)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_row_count: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(0, "PlayerID", 0x078C284C)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '4'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(0, "ItemID", 0x078C2850)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '50'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(0, "ItemQuantity", 0x078C2854)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(0, "ItemType", 0x078C2858)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '3'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(1, "PlayerID", 0x078C285C)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '4'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(1, "ItemID", 0x078C2860)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '51'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(1, "ItemQuantity", 0x078C2864)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(1, "ItemType", 0x078C2868)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '3'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(2, "PlayerID", 0x078C286C)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '4'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(2, "ItemID", 0x078C2870)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '24'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(2, "ItemQuantity", 0x078C2874)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '90'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(2, "ItemType", 0x078C2878)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '2'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(3, "PlayerID", 0x078C287C)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '4'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(3, "ItemID", 0x078C2880)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '29'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(3, "ItemQuantity", 0x078C2884)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '60'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int(3, "ItemType", 0x078C2888)
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: assigned value: '2'
+[7/21/2024 1:32:32 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:32 PM] [DEBUG] AMX callback executed with error '0'
+[7/21/2024 1:32:32 PM] [INFO] Callback successfully executed.
+[7/21/2024 1:32:34 PM] [DEBUG] mysql_format(1, 0x089C15B4, 246, "SELECT * FROM `inventory` WHERE `PlayerID` = %d")
+[7/21/2024 1:32:34 PM] [DEBUG] mysql_format: return value: '46'
+[7/21/2024 1:32:34 PM] [DEBUG] mysql_tquery(1, "SELECT * FROM `inventory` WHERE `PlayerID` = 4", "mysql_LoadPlayerInventory", "d")
+[7/21/2024 1:32:34 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='mysql_LoadPlayerInventory', format='d', params=0x89c159c, param_offset=5)
+[7/21/2024 1:32:34 PM] [DEBUG] CCallback::Create - callback index for 'mysql_LoadPlayerInventory': 238
+[7/21/2024 1:32:34 PM] [DEBUG] processing specifier 'd' with parameter index 0
+[7/21/2024 1:32:34 PM] [DEBUG] retrieved and pushed value '0'
+[7/21/2024 1:32:34 PM] [INFO] Callback 'mysql_LoadPlayerInventory' set up for delayed execution.
+[7/21/2024 1:32:34 PM] [DEBUG] created delayed callback with 1 parameter
+[7/21/2024 1:32:34 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x957ceb8)
+[7/21/2024 1:32:34 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:32:34 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] CConnection::Execute(query=0x957ceb8, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:32:34 PM] [DEBUG] CQuery::Execute(this=0x957ceb8, connection=0x3013658)
+[7/21/2024 1:32:34 PM] [INFO] query "SELECT * FROM `inventory` WHERE `PlayerID` = 4" successfully executed within 2.233 milliseconds
+[7/21/2024 1:32:34 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='SELECT * FROM `inventory` WHERE `PlayerID` = 4')
+[7/21/2024 1:32:34 PM] [DEBUG] created new resultset '0x42ca1e0'
+[7/21/2024 1:32:34 PM] [DEBUG] fetched MySQL result '0x38e8f20'
+[7/21/2024 1:32:34 PM] [DEBUG] allocated 144 bytes for PAWN result
+[7/21/2024 1:32:34 PM] [DEBUG] CCallback::Execute(amx=0x3eade80, index=238, num_params=1)
+[7/21/2024 1:32:34 PM] [INFO] Executing callback 'mysql_LoadPlayerInventory' with 1 parameter...
+[7/21/2024 1:32:34 PM] [DEBUG] processing internal specifier 'c'
+[7/21/2024 1:32:34 PM] [DEBUG] pushed value '0' onto AMX stack
+[7/21/2024 1:32:34 PM] [DEBUG] executing AMX callback with index '238'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_row_count(0x089C19D0)
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_row_count: return value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int(0, "ItemID", 0x089BF774)
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: assigned value: '50'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int(0, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: assigned value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int(1, "ItemID", 0x089BF774)
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: assigned value: '51'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int(1, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: assigned value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int(2, "ItemID", 0x089BF774)
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: assigned value: '24'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int(2, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: assigned value: '90'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int(3, "ItemID", 0x089BF774)
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: assigned value: '29'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int(3, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: assigned value: '60'
+[7/21/2024 1:32:34 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:34 PM] [DEBUG] AMX callback executed with error '0'
+[7/21/2024 1:32:34 PM] [INFO] Callback successfully executed.
+[7/21/2024 1:32:54 PM] [DEBUG] mysql_format(1, 0x089C14F8, 246, "DELETE FROM `inventory` WHERE `PlayerID` = %d AND `ItemID` = %d")
+[7/21/2024 1:32:54 PM] [DEBUG] mysql_format: return value: '62'
+[7/21/2024 1:32:54 PM] [DEBUG] mysql_tquery(1, "DELETE FROM `inventory` WHERE `PlayerID` = 4 AND `ItemID` = 50", "", "")
+[7/21/2024 1:32:54 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='', format='', params=0x89c14e4, param_offset=5)
+[7/21/2024 1:32:54 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x957d2e0)
+[7/21/2024 1:32:54 PM] [DEBUG] CConnection::Execute(query=0x957d2e0, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:32:54 PM] [DEBUG] CQuery::Execute(this=0x957d2e0, connection=0x3013658)
+[7/21/2024 1:32:54 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:32:54 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:32:54 PM] [DEBUG] mysql_format(1, 0x089C1120, 246, "SELECT * FROM `inventory` WHERE `PlayerID` = %d")
+[7/21/2024 1:32:54 PM] [DEBUG] mysql_format: return value: '46'
+[7/21/2024 1:32:54 PM] [DEBUG] mysql_tquery(1, "SELECT * FROM `inventory` WHERE `PlayerID` = 4", "mysql_LoadPlayerInventory", "d")
+[7/21/2024 1:32:54 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='mysql_LoadPlayerInventory', format='d', params=0x89c1108, param_offset=5)
+[7/21/2024 1:32:54 PM] [DEBUG] CCallback::Create - callback index for 'mysql_LoadPlayerInventory': 238
+[7/21/2024 1:32:54 PM] [DEBUG] processing specifier 'd' with parameter index 0
+[7/21/2024 1:32:54 PM] [DEBUG] retrieved and pushed value '0'
+[7/21/2024 1:32:54 PM] [INFO] Callback 'mysql_LoadPlayerInventory' set up for delayed execution.
+[7/21/2024 1:32:54 PM] [DEBUG] created delayed callback with 1 parameter
+[7/21/2024 1:32:54 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x957dcf8)
+[7/21/2024 1:32:54 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:32:54 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:32:54 PM] [INFO] query "DELETE FROM `inventory` WHERE `PlayerID` = 4 AND `ItemID` = 50" successfully executed within 53.399 milliseconds
+[7/21/2024 1:32:54 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='DELETE FROM `inventory` WHERE `PlayerID` = 4 AND `ItemID` = 50')
+[7/21/2024 1:32:54 PM] [DEBUG] created new resultset '0x954d968'
+[7/21/2024 1:32:54 PM] [DEBUG] fetched MySQL result '0x0'
+[7/21/2024 1:32:54 PM] [DEBUG] CConnection::Execute(query=0x957dcf8, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:32:54 PM] [DEBUG] CQuery::Execute(this=0x957dcf8, connection=0x3013658)
+[7/21/2024 1:32:54 PM] [INFO] query "SELECT * FROM `inventory` WHERE `PlayerID` = 4" successfully executed within 13.313 milliseconds
+[7/21/2024 1:32:54 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='SELECT * FROM `inventory` WHERE `PlayerID` = 4')
+[7/21/2024 1:32:54 PM] [DEBUG] created new resultset '0x954de38'
+[7/21/2024 1:32:54 PM] [DEBUG] fetched MySQL result '0x38e8cb0'
+[7/21/2024 1:32:54 PM] [DEBUG] allocated 108 bytes for PAWN result
+[7/21/2024 1:32:54 PM] [DEBUG] CCallback::Execute(amx=0x3eade80, index=238, num_params=1)
+[7/21/2024 1:32:54 PM] [INFO] Executing callback 'mysql_LoadPlayerInventory' with 1 parameter...
+[7/21/2024 1:32:54 PM] [DEBUG] processing internal specifier 'c'
+[7/21/2024 1:32:54 PM] [DEBUG] pushed value '0' onto AMX stack
+[7/21/2024 1:32:54 PM] [DEBUG] executing AMX callback with index '238'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_row_count(0x089C19D0)
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_row_count: return value: '1'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int(0, "ItemID", 0x089BF774)
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: assigned value: '51'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int(0, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: assigned value: '1'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int(1, "ItemID", 0x089BF774)
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: assigned value: '24'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int(1, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: assigned value: '90'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int(2, "ItemID", 0x089BF774)
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: assigned value: '29'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int(2, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: assigned value: '60'
+[7/21/2024 1:32:54 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:54 PM] [DEBUG] AMX callback executed with error '0'
+[7/21/2024 1:32:54 PM] [INFO] Callback successfully executed.
+[7/21/2024 1:32:58 PM] [DEBUG] mysql_format(1, 0x089C15B4, 246, "SELECT * FROM `inventory` WHERE `PlayerID` = %d")
+[7/21/2024 1:32:58 PM] [DEBUG] mysql_format: return value: '46'
+[7/21/2024 1:32:58 PM] [DEBUG] mysql_tquery(1, "SELECT * FROM `inventory` WHERE `PlayerID` = 4", "mysql_LoadPlayerInventory", "d")
+[7/21/2024 1:32:58 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='mysql_LoadPlayerInventory', format='d', params=0x89c159c, param_offset=5)
+[7/21/2024 1:32:58 PM] [DEBUG] CCallback::Create - callback index for 'mysql_LoadPlayerInventory': 238
+[7/21/2024 1:32:58 PM] [DEBUG] processing specifier 'd' with parameter index 0
+[7/21/2024 1:32:58 PM] [DEBUG] retrieved and pushed value '0'
+[7/21/2024 1:32:58 PM] [INFO] Callback 'mysql_LoadPlayerInventory' set up for delayed execution.
+[7/21/2024 1:32:58 PM] [DEBUG] created delayed callback with 1 parameter
+[7/21/2024 1:32:58 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x957d248)
+[7/21/2024 1:32:58 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:32:58 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:32:58 PM] [DEBUG] CConnection::Execute(query=0x957d248, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:32:58 PM] [DEBUG] CQuery::Execute(this=0x957d248, connection=0x3013658)
+[7/21/2024 1:32:58 PM] [INFO] query "SELECT * FROM `inventory` WHERE `PlayerID` = 4" successfully executed within 3.781 milliseconds
+[7/21/2024 1:32:58 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='SELECT * FROM `inventory` WHERE `PlayerID` = 4')
+[7/21/2024 1:32:58 PM] [DEBUG] created new resultset '0x954da48'
+[7/21/2024 1:32:58 PM] [DEBUG] fetched MySQL result '0x38e8aa8'
+[7/21/2024 1:32:58 PM] [DEBUG] allocated 108 bytes for PAWN result
+[7/21/2024 1:32:58 PM] [DEBUG] CCallback::Execute(amx=0x3eade80, index=238, num_params=1)
+[7/21/2024 1:32:58 PM] [INFO] Executing callback 'mysql_LoadPlayerInventory' with 1 parameter...
+[7/21/2024 1:32:58 PM] [DEBUG] processing internal specifier 'c'
+[7/21/2024 1:32:58 PM] [DEBUG] pushed value '0' onto AMX stack
+[7/21/2024 1:32:58 PM] [DEBUG] executing AMX callback with index '238'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_row_count(0x089C19D0)
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_row_count: return value: '1'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int(0, "ItemID", 0x089BF774)
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: assigned value: '51'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int(0, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: assigned value: '1'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int(1, "ItemID", 0x089BF774)
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: assigned value: '24'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int(1, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: assigned value: '90'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int(2, "ItemID", 0x089BF774)
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: assigned value: '29'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int(2, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: assigned value: '60'
+[7/21/2024 1:32:58 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:32:58 PM] [DEBUG] AMX callback executed with error '0'
+[7/21/2024 1:32:58 PM] [INFO] Callback successfully executed.
+[7/21/2024 1:33:35 PM] [DEBUG] mysql_format(1, 0x089C150C, 240, "UPDATE `inventory` SET `ItemQuantity` = '%d' WHERE `ItemID` = '%d' AND `PlayerID` = '%d'")
+[7/21/2024 1:33:35 PM] [DEBUG] mysql_format: return value: '87'
+[7/21/2024 1:33:35 PM] [DEBUG] mysql_tquery(1, "UPDATE `inventory` SET `ItemQuantity` = '30' WHERE `ItemID` = '24' AND `PlayerID` = '4'", "", "")
+[7/21/2024 1:33:35 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='', format='', params=0x89c14f8, param_offset=5)
+[7/21/2024 1:33:35 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x957d080)
+[7/21/2024 1:33:35 PM] [DEBUG] CConnection::Execute(query=0x957d080, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:33:35 PM] [DEBUG] CQuery::Execute(this=0x957d080, connection=0x3013658)
+[7/21/2024 1:33:35 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:33:35 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:33:35 PM] [INFO] query "UPDATE `inventory` SET `ItemQuantity` = '30' WHERE `ItemID` = '24' AND `PlayerID` = '4'" successfully executed within 3.203 milliseconds
+[7/21/2024 1:33:35 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='UPDATE `inventory` SET `ItemQuantity` = '30' WHERE `ItemID` = '24' AND `PlayerID` = '4'')
+[7/21/2024 1:33:35 PM] [DEBUG] created new resultset '0x954dcb0'
+[7/21/2024 1:33:35 PM] [DEBUG] fetched MySQL result '0x0'
+[7/21/2024 1:33:37 PM] [DEBUG] mysql_format(1, 0x089C15B4, 246, "SELECT * FROM `inventory` WHERE `PlayerID` = %d")
+[7/21/2024 1:33:37 PM] [DEBUG] mysql_format: return value: '46'
+[7/21/2024 1:33:37 PM] [DEBUG] mysql_tquery(1, "SELECT * FROM `inventory` WHERE `PlayerID` = 4", "mysql_LoadPlayerInventory", "d")
+[7/21/2024 1:33:37 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='mysql_LoadPlayerInventory', format='d', params=0x89c159c, param_offset=5)
+[7/21/2024 1:33:37 PM] [DEBUG] CCallback::Create - callback index for 'mysql_LoadPlayerInventory': 238
+[7/21/2024 1:33:37 PM] [DEBUG] processing specifier 'd' with parameter index 0
+[7/21/2024 1:33:37 PM] [DEBUG] retrieved and pushed value '0'
+[7/21/2024 1:33:37 PM] [INFO] Callback 'mysql_LoadPlayerInventory' set up for delayed execution.
+[7/21/2024 1:33:37 PM] [DEBUG] created delayed callback with 1 parameter
+[7/21/2024 1:33:37 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x957d7a0)
+[7/21/2024 1:33:37 PM] [DEBUG] CConnection::Execute(query=0x957d7a0, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:33:37 PM] [DEBUG] CQuery::Execute(this=0x957d7a0, connection=0x3013658)
+[7/21/2024 1:33:37 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:33:37 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:33:37 PM] [INFO] query "SELECT * FROM `inventory` WHERE `PlayerID` = 4" successfully executed within 8.340 milliseconds
+[7/21/2024 1:33:37 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='SELECT * FROM `inventory` WHERE `PlayerID` = 4')
+[7/21/2024 1:33:37 PM] [DEBUG] created new resultset '0x954d818'
+[7/21/2024 1:33:37 PM] [DEBUG] fetched MySQL result '0x38e9128'
+[7/21/2024 1:33:37 PM] [DEBUG] allocated 108 bytes for PAWN result
+[7/21/2024 1:33:37 PM] [DEBUG] CCallback::Execute(amx=0x3eade80, index=238, num_params=1)
+[7/21/2024 1:33:37 PM] [INFO] Executing callback 'mysql_LoadPlayerInventory' with 1 parameter...
+[7/21/2024 1:33:37 PM] [DEBUG] processing internal specifier 'c'
+[7/21/2024 1:33:37 PM] [DEBUG] pushed value '0' onto AMX stack
+[7/21/2024 1:33:37 PM] [DEBUG] executing AMX callback with index '238'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_row_count(0x089C19D0)
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_row_count: return value: '1'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int(0, "ItemID", 0x089BF774)
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: assigned value: '51'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int(0, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: assigned value: '1'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int(1, "ItemID", 0x089BF774)
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: assigned value: '24'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int(1, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: assigned value: '30'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int(2, "ItemID", 0x089BF774)
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: assigned value: '29'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int(2, "ItemQuantity", 0x089BF770)
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: assigned value: '60'
+[7/21/2024 1:33:37 PM] [DEBUG] cache_get_value_name_int: return value: '1'
+[7/21/2024 1:33:37 PM] [DEBUG] AMX callback executed with error '0'
+[7/21/2024 1:33:37 PM] [INFO] Callback successfully executed.
+[7/21/2024 1:33:41 PM] [DEBUG] mysql_format(1, 0x089C150C, 240, "UPDATE `inventory` SET `ItemQuantity` = '%d' WHERE `ItemID` = '%d' AND `PlayerID` = '%d'")
+[7/21/2024 1:33:41 PM] [DEBUG] mysql_format: return value: '87'
+[7/21/2024 1:33:41 PM] [DEBUG] mysql_tquery(1, "UPDATE `inventory` SET `ItemQuantity` = '40' WHERE `ItemID` = '29' AND `PlayerID` = '4'", "", "")
+[7/21/2024 1:33:41 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='', format='', params=0x89c14f8, param_offset=5)
+[7/21/2024 1:33:41 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x957d7a0)
+[7/21/2024 1:33:41 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:33:41 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:33:41 PM] [DEBUG] CConnection::Execute(query=0x957d7a0, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:33:41 PM] [DEBUG] CQuery::Execute(this=0x957d7a0, connection=0x3013658)
+[7/21/2024 1:33:41 PM] [INFO] query "UPDATE `inventory` SET `ItemQuantity` = '40' WHERE `ItemID` = '29' AND `PlayerID` = '4'" successfully executed within 4.392 milliseconds
+[7/21/2024 1:33:41 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='UPDATE `inventory` SET `ItemQuantity` = '40' WHERE `ItemID` = '29' AND `PlayerID` = '4'')
+[7/21/2024 1:33:41 PM] [DEBUG] created new resultset '0x954dd20'
+[7/21/2024 1:33:41 PM] [DEBUG] fetched MySQL result '0x0'

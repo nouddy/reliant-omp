@@ -332,6 +332,8 @@ Dialog:inventoryItemOption(const playerid, response, listitem, string: inputtext
 
             new q[246];
 
+            SendClientMessage(playerid, 0xff006fFF, "(inventory): "c_white"Uspjesno si bacio %s.", Inventory_ReturnItemName(InventoryInfo[playerid][tmp_id][ItemID]));
+
             mysql_format(MySQL:SQL, q, sizeof(q), "DELETE FROM `inventory` WHERE `PlayerID` = %d AND `ItemID` = %d", UserInfo[playerid][ID], InventoryInfo[playerid][tmp_id][ItemID]);
             mysql_tquery(SQL, q); 
 
@@ -341,11 +343,11 @@ Dialog:inventoryItemOption(const playerid, response, listitem, string: inputtext
 
             Iter_Remove(iter_Items[playerid], tmp_id);
 
-            SendClientMessage(playerid, 0xff006fFF, "(inventory): "c_white"Uspjesno si bacio %s.", Inventory_ReturnItemName(InventoryInfo[playerid][tmp_id][ItemID]));
-
             new qw[246];
             mysql_format(SQL, qw, sizeof qw, "SELECT * FROM `inventory` WHERE `PlayerID` = %d", UserInfo[playerid][ID]);
             mysql_tquery(SQL, qw, "mysql_LoadPlayerInventory", "d", playerid);
+
+            inventory_ChosenItem[playerid] = INVALID_INVENTORY_ITEM;
 
         }
 
@@ -378,7 +380,7 @@ Dialog:inventoryTakeGun(const playerid, response, listitem, string: inputtext[])
     if(InventoryInfo[playerid][tmp_id][ItemQuantity] == ammo) {
 
         GivePlayerWeapon(playerid, WEAPON:InventoryInfo[playerid][tmp_id][ItemID], ammo);
-        SendClientMessage(playerid, 0xff006fFF, "(0xff006fFF): "c_white"Uzeli ste %s sa %d municije.", Inventory_ReturnItemName(InventoryInfo[playerid][tmp_id][ItemID]), ammo);
+        SendClientMessage(playerid, 0xff006fFF, "(inventory): "c_white"Uzeli ste %s sa %d municije.", Inventory_ReturnItemName(InventoryInfo[playerid][tmp_id][ItemID]), ammo);
 
         new q[128];
         mysql_format(SQL, q, sizeof q, "DELETE FROM `inventory` WHERE `ItemID` = '%d' AND `PlayerID` = '%d'", 
