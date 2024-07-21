@@ -20,6 +20,9 @@
 
 */
 
+#define CGEN_MEMORY		(20000)
+
+
 #include <open.mp>
 #include <a_mysql>
 #include <streamer>
@@ -30,6 +33,7 @@
 #include <ylessinc\YSI_Data\y_foreach>
 #include <ylessinc\YSI_Data\y_iterate>
 #include <easyDialog>
+#include <crashdetect>
 
 //*		>> [ COLOURS ] <<
 
@@ -44,6 +48,9 @@
 #define c_orange		"{daa520}"
 #define c_white         "{ffffff}"
 #define c_lblue			"{7DAEDF}"
+
+#define PRESSED(%0) \
+	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
 
 main()
 {
@@ -449,3 +456,20 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 #include "modules/vehicle/functions.pwn"
 #include "modules/vehicle/main.pwn"
+
+//*			>> [ MISC ] <<
+
+#include "modules/misc/public_places.pwn"
+
+//*			>> [ INVENTORY ] <<
+
+#include "modules/inventory/main.pwn"
+#include "modules/inventory/functions.pwn"
+
+//*			>> [ MAPS - INTERIORS ] <<
+
+#include "maps/hospital-interior.pwn"
+
+//*			>> [ MAPS - EXTERIORS ] <<
+
+#include "maps/bank-exterior.pwn"

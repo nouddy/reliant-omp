@@ -115,6 +115,11 @@ YCMD:veh(playerid, params[], help)
         staffVehicle[playerid] = CreateVehicle(vModel, pPos[0], pPos[1], pPos[2], pPos[3], vColor[0], vColor[1], 1500);
         PutPlayerInVehicle(playerid, staffVehicle[playerid], 0);
 
+        new fmt_label[64];
+        format(fmt_label, sizeof fmt_label, ""c_lblue"(( Staff | "c_white"%s "c_lblue"))", ReturnPlayerName(playerid));
+        staffLabel[playerid] = Create3DTextLabel(fmt_label, -1, 0.00, 0.00, 0.00, 3.50, 0);
+        Attach3DTextLabelToVehicle(staffLabel[playerid], staffVehicle[playerid], 0.00, 0.00, 0.00);
+
         SendClientMessage(playerid, x_server, "(staff): "c_white"Uspjesno ste stvorili staff vozilo.");
 
     }
@@ -130,16 +135,13 @@ YCMD:veh(playerid, params[], help)
 
         if(IsValid3DTextLabel(staffLabel[playerid]))
             Delete3DTextLabel(staffLabel[playerid]);
-
-        SendClientMessage(playerid, x_server, "(staff): "c_white"Uspjesno ste stvorili staff vozilo.");
-    }
-
-    if(!IsValid3DTextLabel(staffLabel[playerid])) {
-
+        
         new fmt_label[64];
         format(fmt_label, sizeof fmt_label, ""c_lblue"(( Staff | "c_white"%s "c_lblue"))", ReturnPlayerName(playerid));
         staffLabel[playerid] = Create3DTextLabel(fmt_label, -1, 0.00, 0.00, 0.00, 3.50, 0);
         Attach3DTextLabelToVehicle(staffLabel[playerid], staffVehicle[playerid], 0.00, 0.00, 0.00);
+
+        SendClientMessage(playerid, x_server, "(staff): "c_white"Uspjesno ste stvorili staff vozilo.");
     }
 
     return 1;
@@ -211,6 +213,39 @@ YCMD:questions(playerid, params[], help)
     return 1;
 }
 
+YCMD:setskin(playerid, params[], help) {
+
+    if(UserInfo[playerid][Staff] < 1) return SendClientMessage(playerid, x_red, "(error): "c_white"Niste dovoljan staff level!");
+
+    new skinID, target;
+    if(sscanf(params, "ud", target, skinID)) return SendClientMessage(playerid, x_server, "(reliant): "c_white"/setskin [Target] [Skin]");
+
+    if(target == INVALID_PLAYER_ID) return SendClientMessage(playerid, x_server, "(reliant): "c_white"Unijeli ste krivi ID igraca.");
+    if(!IsPlayerConnected(target)) return SendClientMessage(playerid, x_server, "(reliant): "c_white"Igrac nije konektovan na server.");
+
+    if(skinID <= 0 || skinID > 311) return SendClientMessage(playerid, x_server, "(reliant): "c_white"ID Skina ne moze biti manji od 1 ili veci od 311.");
+
+    SetPlayerSkin(target, skinID);
+    UserInfo[target][Skin] = skinID;
+
+    SendClientMessage(target, x_server, "(reliant): "c_white"Postavljen vam je skin %d.", skinID);
+    mysql_save_integer("users", "Skin", skinID, "ID", UserInfo[target][ID]);
+
+    return (true);
+}
+
+YCMD:xgoto(playerid, params[], help) {
+
+    if(UserInfo[playerid][Staff] < 1) return SendClientMessage(playerid, x_red, "(error): "c_white"Niste dovoljan staff level!");
+
+    new Float:pos[3];
+    if(sscanf(params, "p<,>fff", pos[0], pos[1], pos[2])) return SendClientMessage(playerid, x_server, "(reliant): "c_white"/xgoto [X] [Y] [Z]"); 
+
+    SetPlayerPos(playerid, pos[0], pos[1], pos[2]);
+
+    return (true);
+}
+
 Dialog:dialog_Questions(const playerid, response, listitem, string: inputtext[]) {
 
     if(!response) return (true);
@@ -232,9 +267,27 @@ Dialog:question_Answer(const playerid, response, listitem, string: inputtext[]) 
         return (true);
     }
 
-    new answer[246];
-    if(sscanf(inputtext, "s[246]", answer)) return Dialog_Show(playerid, "question_Answer", DIALOG_STYLE_INPUT, "Answer", "[ %s ] -> %s", "Odgovori", "Nazad", ReturnPlayerName(QuestionInfo[answeringQuestion[playerid]][PlayerID]), QuestionInfo[answeringQuestion[playerid]][Question]);
+    new qID = answeringQuestion[playerid];
+
+    new answer[MAX_QUESTION_LEN];
+    if(sscanf(inputtext, "s[246]", answer)) return Dialog_Show(playerid, "question_Answer", DIALOG_STYLE_INPUT, "Answer", "[ %s ] -> %s", "Odgovori", "Nazad", ReturnPlayerName(QuestionInfo[qID][PlayerID]), QuestionInfo[qID][Question]);
     
+    new xResponse[MAX_QUESTION_LEN];
+    strmid(xResponse, answer, 0, sizeof answer, MAX_QUESTION_LEN);
+
+    SendClientMessage(QuestionInfo[qID][PlayerID], x_server, "(staff): "c_white"%s vam je odgovorio na pitanje : %s", ReturnPlayerName(playerid), xResponse);
+    SendClientMessage(playerid, x_server, "(staff): "c_white"Odgovorili ste igracu %s odgovorom : %s", ReturnPlayerName(QuestionInfo[qID][PlayerID]), xResponse);
+
+    new q[246];
+    mysql_format(SQL, q, sizeof q, "DELETE FROM `staff_questions` WHERE `PlayerID` = '%d' AND `ID` = '%d'", QuestionInfo[qID][PlayerID], QuestionInfo[qID][ID]);
+    mysql_tquery(SQL, q);
+
+    QuestionInfo[qID][ID] = -1;
+    QuestionInfo[qID][PlayerID] = INVALID_PLAYER_ID;
+    QuestionInfo[qID][Question] = EOS;
+    QuestionInfo[qID][Date] = EOS;
+
+    Iter_Remove(iter_Question, qID);
     return true;
 
 }
