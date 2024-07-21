@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2024 at 11:33 AM
+-- Generation Time: Jul 21, 2024 at 01:31 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `reliant`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `inventory`
+--
+
+CREATE TABLE `inventory` (
+  `PlayerID` int(11) NOT NULL,
+  `ItemID` int(11) NOT NULL,
+  `ItemQuantity` int(11) NOT NULL,
+  `ItemType` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `inventory`
+--
+
+INSERT INTO `inventory` (`PlayerID`, `ItemID`, `ItemQuantity`, `ItemType`) VALUES
+(4, 50, 1, 3),
+(4, 51, 1, 3),
+(4, 24, 90, 2),
+(4, 29, 60, 2);
 
 -- --------------------------------------------------------
 
@@ -59,7 +82,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`ID`, `Password`, `Username`, `Age`, `Gender`, `eMail`, `Score`, `Skin`, `Staff`) VALUES
 (1, '11223344', 'Nodislav_Aleksienko', 17, 1, 'dino@mailer.com', 1, 303, 4),
 (2, '11223344', 'Zeks_Antifriz', 65, 2, 'zika@iberzokna.zimesugumske', 1, 91, 0),
-(3, '12345678', 'Rus.kgb', 60, 1, 'fuck@off.com', 1, 303, 4);
+(3, '12345678', 'Rus.kgb', 60, 1, 'fuck@off.com', 1, 303, 4),
+(4, 'mojasifra.ba', 'Ferid_Olsun', 17, 1, 'ferid.olsun@arbih.rs', 1, 116, 4);
 
 --
 -- Indexes for dumped tables
@@ -79,7 +103,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

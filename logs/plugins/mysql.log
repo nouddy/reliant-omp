@@ -20820,3 +20820,45 @@
 [7/21/2024 12:55:58 PM] [DEBUG] cache_get_row_count: return value: '1'
 [7/21/2024 12:55:58 PM] [DEBUG] AMX callback executed with error '0'
 [7/21/2024 12:55:58 PM] [INFO] Callback successfully executed.
+[7/21/2024 1:27:59 PM] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[7/21/2024 1:27:59 PM] [DEBUG] mysql_connect_file("mysql.ini")
+[7/21/2024 1:27:59 PM] [DEBUG] CHandleManager::CreateFromFile(this=0x11b67b0, file_path='mysql.ini')
+[7/21/2024 1:27:59 PM] [INFO] Options instance with id '1' successfully created.
+[7/21/2024 1:27:59 PM] [DEBUG] CHandleManager::CreateFromFile - new options = 0x3eab3a0 (id '1')
+[7/21/2024 1:27:59 PM] [DEBUG] CHandleManager::Create(this=0x11b67b0, host='localhost', user='root', pass='****', db='reliant', options=0x3eab3a0)
+[7/21/2024 1:27:59 PM] [INFO] Creating new connection handle...
+[7/21/2024 1:27:59 PM] [WARNING] mysql_connect_file: no password specified
+[7/21/2024 1:27:59 PM] [DEBUG] CConnection::CConnection(this=0x3ead470, host='localhost', user='root', passw='****', db='reliant', options=0x3eab3a0)
+[7/21/2024 1:27:59 PM] [DEBUG] CConnection::CConnection - new connection = 0x2e9aff8
+[7/21/2024 1:27:59 PM] [DEBUG] CConnection::CConnection(this=0x8b15020, host='localhost', user='root', passw='****', db='reliant', options=0x3eab3a0)
+[7/21/2024 1:27:59 PM] [DEBUG] CConnection::CConnection - new connection = 0x3013658
+[7/21/2024 1:27:59 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x8b15020, connection=0x8b15020)
+[7/21/2024 1:27:59 PM] [DEBUG] CConnectionPool::CConnectionPool(size=2, this=0x3ead6f0)
+[7/21/2024 1:27:59 PM] [DEBUG] CConnection::CConnection(this=0x8ce5020, host='localhost', user='root', passw='****', db='reliant', options=0x3eab3a0)
+[7/21/2024 1:27:59 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x8b15020, connection=0x8b15020)
+[7/21/2024 1:27:59 PM] [DEBUG] CConnection::CConnection - new connection = 0x301a100
+[7/21/2024 1:27:59 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x8ce5020, connection=0x8ce5020)
+[7/21/2024 1:27:59 PM] [DEBUG] CConnection::CConnection(this=0x8eb0020, host='localhost', user='root', passw='****', db='reliant', options=0x3eab3a0)
+[7/21/2024 1:27:59 PM] [DEBUG] CConnection::CConnection - new connection = 0x301b310
+[7/21/2024 1:27:59 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x8ce5020, connection=0x8ce5020)
+[7/21/2024 1:27:59 PM] [DEBUG] CThreadedConnection::WorkerFunc(this=0x8eb0020, connection=0x8eb0020)
+[7/21/2024 1:27:59 PM] [DEBUG] CThreadedConnection::CThreadedConnection(this=0x8eb0020, connection=0x8eb0020)
+[7/21/2024 1:27:59 PM] [INFO] Connection handle with id '1' successfully created.
+[7/21/2024 1:27:59 PM] [DEBUG] CHandleManager::Create - new handle = 0x402dee0
+[7/21/2024 1:27:59 PM] [DEBUG] mysql_connect_file: return value: '1'
+[7/21/2024 1:27:59 PM] [DEBUG] mysql_errno(1)
+[7/21/2024 1:27:59 PM] [DEBUG] CHandle::GetErrorId(this=0x402dee0)
+[7/21/2024 1:27:59 PM] [DEBUG] CConnection::GetError(this=0x3ead470, connection=0x2e9aff8)
+[7/21/2024 1:27:59 PM] [DEBUG] CHandle::GetErrorId - return value: true, error id: '0', error msg: ''
+[7/21/2024 1:27:59 PM] [DEBUG] mysql_errno: return value: '0'
+[7/21/2024 1:27:59 PM] [DEBUG] mysql_tquery(1, "TRUNCATE TABLE `staff_questions`", "", "")
+[7/21/2024 1:27:59 PM] [DEBUG] CCallback::Create(amx=0x3eade80, name='', format='', params=0x89c199c, param_offset=5)
+[7/21/2024 1:27:59 PM] [DEBUG] CHandle::Execute(this=0x402dee0, type=1, query=0x2ea5758)
+[7/21/2024 1:27:59 PM] [DEBUG] CHandle::Execute - return value: true
+[7/21/2024 1:27:59 PM] [DEBUG] mysql_tquery: return value: '1'
+[7/21/2024 1:27:59 PM] [DEBUG] CConnection::Execute(query=0x2ea5758, this=0x8b15020, connection=0x3013658)
+[7/21/2024 1:27:59 PM] [DEBUG] CQuery::Execute(this=0x2ea5758, connection=0x3013658)
+[7/21/2024 1:27:59 PM] [INFO] query "TRUNCATE TABLE `staff_questions`" successfully executed within 470.669 milliseconds
+[7/21/2024 1:27:59 PM] [DEBUG] CResultSet::Create(connection=0x3013658, query_str='TRUNCATE TABLE `staff_questions`')
+[7/21/2024 1:27:59 PM] [DEBUG] created new resultset '0x2e98b80'
+[7/21/2024 1:27:59 PM] [DEBUG] fetched MySQL result '0x0'
