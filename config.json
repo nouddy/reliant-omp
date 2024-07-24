@@ -93,7 +93,7 @@
     },
     "password": "",
     "pawn": {
-        "legacy_plugins": ["mysql", "streamer"],
+        "legacy_plugins": ["crashdetect", "mysql", "streamer"],
         "main_scripts": [
             "main 1"
         ],

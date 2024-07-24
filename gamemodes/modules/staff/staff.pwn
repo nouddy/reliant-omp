@@ -177,6 +177,23 @@ YCMD:setstaff(playerid, params[], help)
     return 1;
 }
 
+YCMD:givegun(playerid, params[], help) 
+{
+    
+    if(UserInfo[playerid][Staff] < 2)
+        return SendClientMessage(playerid, x_red, "(error): "c_white"Niste dovoljan staff level!");
+
+    new WEAPON:weapon, ammo, target;
+    if(sscanf(params, "ddd", target, weapon, ammo)) return SendClientMessage(playerid, x_server, "(staff): "c_white"/givegun [Igrac] [ID Oruzja] [Municija]");
+
+    if(ammo < 0)
+        return true;
+
+    GivePlayerWeapon(target, weapon, ammo);
+
+    return 1;
+}
+
 YCMD:askq(playerid, params[], help) {
 
     new text[MAX_QUESTION_LEN];

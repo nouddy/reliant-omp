@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2024 at 01:31 PM
+-- Generation Time: Jul 24, 2024 at 02:10 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -24,6 +24,40 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `business`
+--
+
+CREATE TABLE `business` (
+  `BusinessID` int(11) NOT NULL,
+  `BusinessOwner` int(11) NOT NULL,
+  `BusinessName` varchar(64) NOT NULL,
+  `BusinessLocked` int(11) NOT NULL,
+  `BusinessMoney` int(11) NOT NULL,
+  `BusinessVW` int(11) NOT NULL,
+  `BusinessType` float NOT NULL,
+  `BusinessPrice` float NOT NULL,
+  `BusinessEntrance_X` float NOT NULL,
+  `BusinessEntrance_Y` float NOT NULL,
+  `BusinessEntrance_Z` float NOT NULL,
+  `BusinessExit_X` float NOT NULL,
+  `BusinessExit_Y` float NOT NULL,
+  `BusinessExit_Z` float NOT NULL,
+  `BusinessInteract_X` float NOT NULL,
+  `BusinessInteract_Y` float NOT NULL,
+  `BusinessInteract_Z` float NOT NULL,
+  `BusinessProducts` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `business`
+--
+
+INSERT INTO `business` (`BusinessID`, `BusinessOwner`, `BusinessName`, `BusinessLocked`, `BusinessMoney`, `BusinessVW`, `BusinessType`, `BusinessPrice`, `BusinessEntrance_X`, `BusinessEntrance_Y`, `BusinessEntrance_Z`, `BusinessExit_X`, `BusinessExit_Y`, `BusinessExit_Z`, `BusinessInteract_X`, `BusinessInteract_Y`, `BusinessInteract_Z`, `BusinessProducts`) VALUES
+(1, -1, '0', 1, 0, 1, 1, 0, 162.178, -169.923, 1.58472, 6.08, -28.89, 1003.54, 162.178, -169.923, 1.58472, 0);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `inventory`
 --
 
@@ -39,10 +73,27 @@ CREATE TABLE `inventory` (
 --
 
 INSERT INTO `inventory` (`PlayerID`, `ItemID`, `ItemQuantity`, `ItemType`) VALUES
-(4, 50, 1, 3),
-(4, 51, 1, 3),
-(4, 24, 90, 2),
-(4, 29, 60, 2);
+(4, 24, 90, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `player_property`
+--
+
+CREATE TABLE `player_property` (
+  `PlayerID` int(11) NOT NULL,
+  `BusinessID` int(11) NOT NULL,
+  `HouseID` int(11) NOT NULL,
+  `ApartmentID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `player_property`
+--
+
+INSERT INTO `player_property` (`PlayerID`, `BusinessID`, `HouseID`, `ApartmentID`) VALUES
+(4, -1, -1, -1);
 
 -- --------------------------------------------------------
 
@@ -90,6 +141,18 @@ INSERT INTO `users` (`ID`, `Password`, `Username`, `Age`, `Gender`, `eMail`, `Sc
 --
 
 --
+-- Indexes for table `business`
+--
+ALTER TABLE `business`
+  ADD PRIMARY KEY (`BusinessID`);
+
+--
+-- Indexes for table `player_property`
+--
+ALTER TABLE `player_property`
+  ADD UNIQUE KEY `uSQLID` (`PlayerID`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -98,6 +161,12 @@ ALTER TABLE `users`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `business`
+--
+ALTER TABLE `business`
+  MODIFY `BusinessID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`

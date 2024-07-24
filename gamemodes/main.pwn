@@ -52,6 +52,11 @@
 #define PRESSED(%0) \
 	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
 
+stock bool:Weapon_IsValid(weaponid)
+{
+	return (weaponid >= 1 && weaponid <= 18 || weaponid >= 21 && weaponid <= 46);
+}
+
 main()
 {
     print("-                                     -");
@@ -452,6 +457,8 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 #include "modules/staff/functions.pwn"
 #include "modules/staff/staff.pwn"
 
+#include "modules/anti-cheat/_core.pwn"
+
 //*			>> [ VEHICLE ] <<
 
 #include "modules/vehicle/functions.pwn"
@@ -466,6 +473,12 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 #include "modules/inventory/main.pwn"
 #include "modules/inventory/functions.pwn"
 
+//*			>> [ REAL ESTATE ] <<
+
+// #include "modules/real_estate/functions.pwn" -> Ne koristi se trenutno.
+#include "modules/real_estate/main.pwn"
+#include "modules/real_estate/player_data.pwn"
+
 //*			>> [ MAPS - INTERIORS ] <<
 
 #include "maps/hospital-interior.pwn"
@@ -473,3 +486,10 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 //*			>> [ MAPS - EXTERIORS ] <<
 
 #include "maps/bank-exterior.pwn"
+
+YCMD:cls(playerid, params[], help) 
+{
+	for(new j = 0; j < 120; j++)
+		SendClientMessage(playerid, -1, "");
+	return 1;
+}

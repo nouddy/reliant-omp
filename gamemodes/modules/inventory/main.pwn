@@ -115,11 +115,23 @@ public mysql_AddInventoryItem(playerid, item, quantity) {
     new rows = cache_num_rows();
     if(!rows) {
 
+        new xType;
+
+        if(Weapon_IsValid(item))
+            xType = INVENTORY_ITEM_TYPE_WEAPON;
+        else    
+            xType = sz_itemType[item-50][itemType];
+
+        if(xType == INVENTORY_ITEM_TYPE_WEAPON)
+            quantity = MAX_AMMO_QUANTITY;
+
+        printf("DEBUG: xType var is equal to : %d", xType);
+
         new q[240];
         mysql_format(SQL, q, sizeof q, "INSERT INTO `inventory` (`PlayerID`, `ItemID`, `ItemQuantity`, `ItemType`) \
                                         VALUES (%d, %d, %d, %d)",
                                         UserInfo[playerid][ID], item,
-                                        quantity, sz_itemType[item-50][itemType]);
+                                        quantity, xType);
         mysql_tquery(SQL, q);
 
         new nextID = Iter_Free(iter_Items[playerid]);
@@ -127,14 +139,12 @@ public mysql_AddInventoryItem(playerid, item, quantity) {
         InventoryInfo[playerid][nextID][PlayerID] = UserInfo[playerid][ID];
         InventoryInfo[playerid][nextID][ItemID] = item;
         InventoryInfo[playerid][nextID][ItemQuantity] = quantity;
-        InventoryInfo[playerid][nextID][ItemType] = sz_itemType[item-50][itemType];
+        InventoryInfo[playerid][nextID][ItemType] = xType;
 
         Iter_Add(iter_Items[playerid], nextID);
 
         printf("PlayerID - %d, ItemID - %d, ItemQuantity - %d, ItemType - %s", playerid, item, quantity, Inventory_ReturnItemName(item) );
         printf("Array ID - %d", nextID);
-
-        SendClientMessage(playerid, 0xdaa520ff, "> Postavljen vam je item : %s, kolicina %d", Inventory_ReturnItemName(item), quantity);
     }
 
     else {
@@ -143,12 +153,21 @@ public mysql_AddInventoryItem(playerid, item, quantity) {
         cache_get_value_name_int(0, "ItemQuantity", xQuantity);
         cache_get_value_name_int(0, "ItemID", xItem);
 
+        new xType;
+
+        if(Weapon_IsValid(item))
+            xType = MAX_AMMO_QUANTITY;
+        else    
+            xType = sz_quantityInfo[xItem-50][maxQuantity];
+
+        printf("DEBUG: xType var is equal to : %d", xType);
+
         foreach(new idx : iter_Items[playerid]) {
 
             if(InventoryInfo[playerid][idx][ItemID] == item) {
 
                 if( ( xQuantity + quantity ) > sz_quantityInfo[ItemID][maxQuantity] ) 
-                    InventoryInfo[playerid][idx][ItemQuantity] = sz_quantityInfo[xItem-50][maxQuantity];
+                    InventoryInfo[playerid][idx][ItemQuantity] = xType;
                 else
                     InventoryInfo[playerid][idx][ItemQuantity] += quantity;
             
@@ -404,7 +423,7 @@ Dialog:inventoryTakeGun(const playerid, response, listitem, string: inputtext[])
     InventoryInfo[playerid][tmp_id][ItemQuantity]-= ammo;
 
     GivePlayerWeapon(playerid, WEAPON:InventoryInfo[playerid][tmp_id][ItemID], ammo);
-    SendClientMessage(playerid, x_server, "(0xff006fFF): "c_white"Uzeli ste %s sa %d municije.", Inventory_ReturnItemName(InventoryInfo[playerid][tmp_id][ItemID]), ammo);
+    SendClientMessage(playerid, 0xff006fFF, "(inventory): "c_white"Uzeli ste %s sa %d municije.", Inventory_ReturnItemName(InventoryInfo[playerid][tmp_id][ItemID]), ammo);
 
     new q[240];
 
@@ -424,6 +443,97 @@ YCMD:invname(playerid, params[], help) {
     SendClientMessage(playerid, x_server, "%s", Inventory_ReturnItemName(id));
     
     return (true);
+}
+
+YCMD:putgun(playerid, params[], help) 
+{
+    
+    new ammo;
+
+    if(sscanf(params, "d", ammo)) 
+        return SendClientMessage(playerid, 0xff006fff, "(inventory): "c_white"/putgun [Kolicina]");
+
+    if(GetPlayerWeapon(playerid) == WEAPON_FIST) 
+        return SendClientMessage(playerid, 0xff006fff, "(inventory) "c_white"Oruzje vam mora biti u ruci!");
+
+    if(!Weapon_IsValid( GetPlayerWeapon(playerid) )) 
+        return SendClientMessage(playerid, 0xff006fff, "(inventory): "c_white"Ovo oruzje ne mozete shraniti u inventar!");
+
+    if(ammo < 0 || ammo > GetPlayerAmmo(playerid))
+        return SendClientMessage(playerid, 0xff006fff, "(inventory): "c_white"Kolicina municije ne moze biti manja od nula ili veca od postojece!");
+
+    //* Posto mi je matematika ravna nuli (kad su govorili uci dino sad se jebi)
+    //* Ukoliko igrac hoce da ostavi 80 metaka, a puska vec ima 67, maksimalni limit je 90, onda ce mu se nadodati na to samo 23 ( 67 + 23 ) == 90 
+    //* To znaci da, ce mu ostati 57 ( 80 - 23 ) == 57, sto znaci da je formula za ovo sranje
+    //* MAX_INVENTORY_AMMO (90) - currentAmmo (67) == 23, newAmmo = inputAmmo(80) - 23 = 57.
+    //* Bolje bi mi bilo da sam kanale kopo 
+
+    new xWeapon = GetPlayerWeapon(playerid);
+
+    new wpn[32+1];
+    GetWeaponName(GetPlayerWeapon(playerid), wpn, sizeof wpn);
+
+    new bool:weaponFound = false;
+
+    foreach(new i : iter_Items[playerid]) {
+
+        if(InventoryInfo[playerid][i][ItemID] == xWeapon) {
+            
+            weaponFound = true;
+
+            if(InventoryInfo[playerid][i][ItemQuantity] >= MAX_AMMO_QUANTITY)
+                return SendClientMessage(playerid, 0xff006fff, "(inventory) "c_white"Vec posjedujete maksimalnu kolicinu municije za ovo oruzje!");
+
+            if( ( ammo + InventoryInfo[playerid][i][ItemQuantity] >= MAX_AMMO_QUANTITY ) ) {
+
+                new oldAmmo = ( MAX_AMMO_QUANTITY - InventoryInfo[playerid][i][ItemQuantity] );
+
+                SetPlayerAmmo(playerid, GetPlayerWeapon(playerid), 0);
+                GivePlayerWeapon(playerid, WEAPON:xWeapon, ( ammo - oldAmmo )); //* El Fatiha
+                SendClientMessage(playerid, 0xff006fff, "(inventory): "c_white"Preostalo vam je %d municije za %s", ( ammo - oldAmmo ), wpn );
+
+                InventoryInfo[playerid][i][ItemQuantity] = MAX_AMMO_QUANTITY;
+
+                printf("DEBUG: Player has %s weapon with %d ammo", wpn, GetPlayerAmmo(playerid));
+                printf("DEBUG: New ammo quantity is %d", InventoryInfo[playerid][i][ItemQuantity]);
+
+                new q[128];
+                mysql_format(MySQL:SQL, q, sizeof q, "UPDATE `inventory` SET `ItemQuantity` = '%d' WHERE `PlayerID` = '%d' AND `ItemID` = '%d'", 
+                                                    InventoryInfo[playerid][i][ItemQuantity], UserInfo[playerid][ID], InventoryInfo[playerid][i][ItemID]);
+                mysql_tquery(SQL, q);
+                return 1;
+            }
+
+            else {
+
+                print("DEBUG: Adding quantity, not seting it do MAX_AMMO_QUANTITY (90)?");
+
+                InventoryInfo[playerid][i][ItemQuantity] += ammo;
+                SetPlayerAmmo(playerid, GetPlayerWeapon(playerid), ( GetPlayerAmmo(playerid) - ammo) );
+
+                SendClientMessage(playerid, 0xff006fff, "(inventory): "c_white"Uspjesno ste ostavili %d municije za %s", ammo, wpn );
+
+                new q[128];
+                mysql_format(MySQL:SQL, q, sizeof q, "UPDATE `inventory` SET `ItemQuantity` = '%d' WHERE `PlayerID` = '%d' AND `ItemID` = '%d'", 
+                                                    InventoryInfo[playerid][i][ItemQuantity], UserInfo[playerid][ID], InventoryInfo[playerid][i][ItemID]);
+                mysql_tquery(SQL, q);
+                return 1;
+
+            }
+        }
+    }
+
+    if(!weaponFound) 
+    {
+        SetPlayerAmmo(playerid, GetPlayerWeapon(playerid), ( GetPlayerAmmo(playerid) - ammo) );
+
+        new q[120];
+        mysql_format(SQL, q, sizeof q, "SELECT * FROM `inventory` WHERE `PlayerID` = %d AND `ItemID` = %d", UserInfo[playerid][ID], xWeapon);
+        mysql_tquery(MySQL:SQL, q, "mysql_AddInventoryItem", "ddd", playerid, xWeapon, ammo);
+        return 1;
+    }
+
+    return 1;
 }
 
 /*

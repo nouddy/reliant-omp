@@ -278,3 +278,6 @@ Dialog:account_Login(const playerid, response, listitem, string: inputtext[]) {
 
     return (true);
 }
+
+stock GetPlayerSQLID(playerid)
+    return UserInfo[playerid][ID];
