@@ -69,7 +69,7 @@ hook OnClientCheckResponse(playerid, actionid, memaddr, retndata) {
     
     if(actionid == CHEAT_TYPE_MONEY) {
 
-        if(retndata > 100 || retndata < 0) {
+        if(retndata > 10000000 || retndata < 0) {
 
             SendClientMessage(playerid, 0xff006fff, "(anticheat): "c_white"Money hack detected!");
             SendClientMessageToAll(0xff006fff, "(anticheat): "c_white"Igrac %s je kickovan zbog moguceg : {ff006f}%d | MONEY HACK", ReturnPlayerName(playerid), CHEAT_TYPE_MONEY);
