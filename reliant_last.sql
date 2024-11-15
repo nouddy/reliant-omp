@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 24, 2024 at 02:10 AM
+-- Generation Time: Nov 15, 2024 at 10:32 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -93,7 +93,9 @@ CREATE TABLE `player_property` (
 --
 
 INSERT INTO `player_property` (`PlayerID`, `BusinessID`, `HouseID`, `ApartmentID`) VALUES
-(4, -1, -1, -1);
+(1, -1, -1, -1),
+(4, -1, -1, -1),
+(9, -1, -1, -1);
 
 -- --------------------------------------------------------
 
@@ -123,18 +125,17 @@ CREATE TABLE `users` (
   `eMail` varchar(128) NOT NULL DEFAULT 'user.user@gmail.com',
   `Score` int(11) NOT NULL DEFAULT 1,
   `Skin` int(11) NOT NULL DEFAULT 24,
-  `Staff` int(11) NOT NULL DEFAULT 0
+  `Staff` int(11) NOT NULL DEFAULT 0,
+  `Money` int(11) NOT NULL,
+  `Introduction` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`ID`, `Password`, `Username`, `Age`, `Gender`, `eMail`, `Score`, `Skin`, `Staff`) VALUES
-(1, '11223344', 'Nodislav_Aleksienko', 17, 1, 'dino@mailer.com', 1, 303, 4),
-(2, '11223344', 'Zeks_Antifriz', 65, 2, 'zika@iberzokna.zimesugumske', 1, 91, 0),
-(3, '12345678', 'Rus.kgb', 60, 1, 'fuck@off.com', 1, 303, 4),
-(4, 'mojasifra.ba', 'Ferid_Olsun', 17, 1, 'ferid.olsun@arbih.rs', 1, 116, 4);
+INSERT INTO `users` (`ID`, `Password`, `Username`, `Age`, `Gender`, `eMail`, `Score`, `Skin`, `Staff`, `Money`, `Introduction`) VALUES
+(1, 'djkramak', 'Eros_Bosandzeros', 18, 1, 'zdravkocolic@skibidi.rizzler', 1, 303, 0, 3500, 1);
 
 --
 -- Indexes for dumped tables
@@ -172,7 +173,7 @@ ALTER TABLE `business`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
