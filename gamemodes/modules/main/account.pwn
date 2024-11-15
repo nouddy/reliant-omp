@@ -34,7 +34,9 @@ enum e_PLAYER_DATA {
     eMail[128],
     Score,
     Skin,
-    Staff
+    Staff,
+    Money,
+    Introduction
 }
 
 new UserInfo[MAX_PLAYERS][e_PLAYER_DATA];
@@ -45,14 +47,15 @@ timer timer_SpawnPlayer[400](playerid, spawnType)
 {
     if(spawnType == SPAWN_TYPE_REGISTER) {
 
-        SetSpawnInfo(playerid, NO_TEAM, UserInfo[playerid][Skin], 167.1225,-160.3572,6.7786,91.0767, WEAPON_UNKNOWN, 0, WEAPON_UNKNOWN, 0, WEAPON_UNKNOWN, 0);
-        SetPlayerVirtualWorld(playerid, 0);
-        SetPlayerInterior(playerid, 0);
 
-        SpawnPlayer(playerid);
+        CallLocalFunction("Introduction_InitializeForPlayer", "d", playerid);
+
     }
 
     else if(spawnType == SPAWN_TYPE_LOGIN) {
+
+        if(UserInfo[playerid][Introduction] == 0) 
+            return CallLocalFunction("Introduction_InitializeForPlayer", "d", playerid);
 
         SetSpawnInfo(playerid, NO_TEAM, UserInfo[playerid][Skin], 167.1225,-160.3572,6.7786,91.0767, WEAPON_UNKNOWN, 0, WEAPON_UNKNOWN, 0, WEAPON_UNKNOWN, 0);
         SetPlayerVirtualWorld(playerid, 0);
@@ -101,13 +104,8 @@ public mysql_CheckAccount(playerid) {
 forward mysql_RegisterAccount(playerid);
 public mysql_RegisterAccount(playerid) {
 
-    SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"%s, dobrodosli na server.", ReturnPlayerName(playerid));
-    SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"Vas account je uspjesno kreiran i sacuvan u "c_server"databazi.");
-    SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"Ukoliko vam zatreba pomoc, "c_server"/new.");
 
     defer timer_SpawnPlayer(playerid, SPAWN_TYPE_REGISTER);
-
-    CallLocalFunction("OnPlayerLoaded", "d", playerid);
 
     return (true);
 }
@@ -121,28 +119,29 @@ public mysql_LoadAccount(playerid) {
 
         SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"Desila se je greska sa databazom...");
         Kick(playerid);
+        return (true);
     }
 
-    else {
+    cache_get_value_name_int(0, "ID", UserInfo[playerid][ID]);
+    cache_get_value_name(0, "Username", UserInfo[playerid][Username], MAX_PLAYER_NAME);
+    cache_get_value_name_int(0, "Age", UserInfo[playerid][Age]);
+    cache_get_value_name_int(0, "Gender", UserInfo[playerid][Gender]);
+    cache_get_value_name(0, "eMail", UserInfo[playerid][eMail], 128);
+    cache_get_value_name_int(0, "Score", UserInfo[playerid][Score]);
+    cache_get_value_name_int(0, "Skin", UserInfo[playerid][Skin]);
+    cache_get_value_name_int(0, "Staff", UserInfo[playerid][Staff]);
+    cache_get_value_name_int(0, "Money", UserInfo[playerid][Money]);
+    cache_get_value_name_int(0, "Introduction", UserInfo[playerid][Introduction]);
 
+    SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"%s, lijepo vas je vidjeti opet.", ReturnPlayerName(playerid));
+    SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"Ukoliko vam je potrebna pomoc"c_server" /askq.");
+    SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"Svi upiti za staff su besplatni do levela "c_server"3.");
 
-        cache_get_value_name_int(0, "ID", UserInfo[playerid][ID]);
-        cache_get_value_name(0, "Username", UserInfo[playerid][Username], MAX_PLAYER_NAME);
-        cache_get_value_name_int(0, "Age", UserInfo[playerid][Age]);
-        cache_get_value_name_int(0, "Gender", UserInfo[playerid][Gender]);
-        cache_get_value_name(0, "eMail", UserInfo[playerid][eMail], 128);
-        cache_get_value_name_int(0, "Score", UserInfo[playerid][Score]);
-        cache_get_value_name_int(0, "Skin", UserInfo[playerid][Skin]);
-        cache_get_value_name_int(0, "Staff", UserInfo[playerid][Staff]);
+    GivePlayerMoney(playerid, UserInfo[playerid][Money]);
 
+    defer timer_SpawnPlayer(playerid, SPAWN_TYPE_LOGIN);
+    CallLocalFunction("OnPlayerLoaded", "d", playerid);
 
-        SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"%s, lijepo vas je vidjeti opet.", ReturnPlayerName(playerid));
-        SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"Ukoliko vam je potrebna pomoc"c_server" /askq.");
-        SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"Svi upiti za staff su besplatni do levela "c_server"3.");
-
-        defer timer_SpawnPlayer(playerid, SPAWN_TYPE_LOGIN);
-        CallLocalFunction("OnPlayerLoaded", "d", playerid);
-    }
 
     return (true);
 }
@@ -231,10 +230,13 @@ Dialog:account_Email(const playerid, response, listitem, string: inputtext[]) {
     if(UserInfo[playerid][Gender] == 1) { UserInfo[playerid][Skin] = 303; }
     else { UserInfo[playerid][Skin] = 91; }
 
+    UserInfo[playerid][Money] = 3500;
+    UserInfo[playerid][Introduction] = 0;
+
     new q[888];
 
-    mysql_format(MySQL:SQL, q, sizeof q, "INSERT INTO `users` (`Password`, `Username`, `Age`, `Gender`, `eMail`, `Score`, `Skin`, `Staff`) \
-                                          VALUES ('%e', '%e', '%d', '%d', '%e', '1', '%d', '0')",
+    mysql_format(MySQL:SQL, q, sizeof q, "INSERT INTO `users` (`Password`, `Username`, `Age`, `Gender`, `eMail`, `Score`, `Skin`, `Staff`, `Money`, `Introduction`) \
+                                          VALUES ('%e', '%e', '%d', '%d', '%e', '1', '%d', '0', '3500', 0)",
                                           UserInfo[playerid][Password], ReturnPlayerName(playerid),
                                           UserInfo[playerid][Age], UserInfo[playerid][Gender],
                                           UserInfo[playerid][eMail], UserInfo[playerid][Skin]);

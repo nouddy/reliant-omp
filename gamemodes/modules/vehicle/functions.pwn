@@ -15,7 +15,7 @@
 
 #include <ylessinc\YSI_Coding\y_hooks>
 
-bool:IsVehicleBicycle(vehicle) {
+stock IsVehicleBicycle(vehicle) {
 
 	switch(vehicle) {
 
@@ -25,7 +25,7 @@ bool:IsVehicleBicycle(vehicle) {
 }
 
 //* Prikolice
-stock bool:IsVehicleTrailer(vehicle) {
+stock IsVehicleTrailer(vehicle) {
 
 	switch(vehicle) {
 

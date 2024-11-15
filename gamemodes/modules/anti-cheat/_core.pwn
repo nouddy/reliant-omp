@@ -1,102 +1,126 @@
 /*
-
-*  _____  ______ _      _____          _   _ _______   _____  _____   ____       _ ______ _____ _______ 
-* |  __ \|  ____| |    |_   _|   /\   | \ | |__   __| |  __ \|  __ \ / __ \     | |  ____/ ____|__   __|
-* | |__) | |__  | |      | |    /  \  |  \| |  | |    | |__) | |__) | |  | |    | | |__ | |       | |   
-* |  _  /|  __| | |      | |   / /\ \ | . ` |  | |    |  ___/|  _  /| |  | |_   | |  __|| |       | |   
-* | | \ \| |____| |____ _| |_ / ____ \| |\  |  | |    | |    | | \ \| |__| | |__| | |___| |____   | |   
-* |_|  \_\______|______|_____/_/    \_\_| \_|  |_|    |_|    |_|  \_\\____/ \____/|______\_____|  |_|   
-*
-
-*   @Author : Noddy
-*   @Date : 7.13.2024
+ 
+*                                _   _            _                _   
+*                      __ _ _ __ | |_(_)       ___| |__   ___  __ _| |_ 
+*                     / _` | '_ \| __| |_____ / __| '_ \ / _ \/ _` | __|
+*                    | (_| | | | | |_| |_____| (__| | | |  __/ (_| | |_ 
+*                     \__,_|_| |_|\__|_|      \___|_| |_|\___|\__,_|\__|
+*                                                                       
+*                  _________________________________________________________
+*               
+*                   @Author : Noddy
+*                   Date : 7/11/2024
+*                   
+*                   TODO LIST:
+*                   
+*                   Do everything.
 
 */
 
 #include <ylessinc\YSI_Coding\y_hooks>
 
-//* AntiCheat types, da li igrac ima godmode, teleport hack itd...
+//*==============================================================================
+//*--->>> Begining
+//*==============================================================================
 
-enum {
+#define ac_func%0(%1) \
+        forward%0(%1); \
+        public%0(%1) 
 
-    CHEAT_TYPE_MONEY = 1,
-    CHEAT_TYPE_HEALTH,
-    CHEAT_TYPE_ARMOUR,
-    CHEAT_TYPE_SKIN_CHANGER,
-    CHEAT_TYPE_MAP_TELEPORT
+#define MAX_PLAYER_WEAPONS          (13)
+
+enum e_ANTI_CHEAT_CODE {
+
+    CHEAT_TYPE_JETPACK = 0,
+    CHEAT_TYPE_SPECIAL_ACTION,
+    CHEAT_TYPE_SPEED_HACK, // * 46
+    CHEAT_TYPE_TELEPORT,
+    CHEAT_TYPE_WEAPON_HACK
 }
 
-new Float:clickedPos[MAX_PLAYERS][3];
+enum E_ANTI_CHEAT_DATA {
 
-forward AntiCheat_OnPlayerClickMap(playerid, Float:positionX, Float:positionY, Float:positionZ);
+    WEAPON:acWeapon[MAX_PLAYER_WEAPONS],
+    acAmmo[MAX_PLAYER_WEAPONS],
 
-timer ac_Kick[1500](playerid) 
-{
-    Kick(playerid);
+    acInt,
+    acVW,
+
+    Float:acPos[3],
+    SPECIAL_ACTION:acSpecialAction
+}
+
+new AC_Info[MAX_PLAYERS][E_ANTI_CHEAT_DATA];
+
+new const ac_CodeNames[][] = {
+
+    "Jetpack Hack",
+    "Special Action Hack",
+    "Speed Hack",
+    "Teleport Hack",
+    "Weapon Hack"
+};
+
+ac_func ac_GivePlayerMoney(playerid, money) {
+
+    UserInfo[playerid][Money] += money;
+    ResetPlayerMoney(playerid);
+    GivePlayerMoney(playerid, UserInfo[playerid][Money]);
 
     return (true);
 }
 
+
+//*==============================================================================
+//*--->>> Functions
+//*==============================================================================
+
+forward OnCheatDetected(playerid, e_ANTI_CHEAT_CODE:code);
+public OnCheatDetected(playerid, e_ANTI_CHEAT_CODE:code) {
+    //* -->> DEBUG:
+
+    SendClientMessageToAll(0xFF0055FF, "R E L I A N T | AC "c_white"%s mozda koristi {FF0056}#%d %s", code, ac_CodeNames[ code ]);
+    return (true);
+}
+
+
+//*==============================================================================
+//*--->>> Hooks
+//*==============================================================================
 
 hook OnPlayerConnect(playerid) {
 
-    // Slanje provjere igracu za memorisjku adresu -> Ne znam da li ce biti funkcionalno jer sam samo preko cheat engina nasao adresu za novac.
-    // Vidjet cemo dalje kako sta
+    // * Unfinished, RAAAHHHHH
 
-    clickedPos[playerid][0] = clickedPos[playerid][1] = clickedPos[playerid][2] = 0.00; // Resetovanje na 0.00 za svaki slucaj.
+    for(new i = 0; i < MAX_PLAYER_WEAPONS; i++) {
 
-    SendClientCheck(playerid, CHEAT_TYPE_MONEY, 0x00B7CE50, 0, 4);
+        AC_Info[playerid][acWeapon][i] = UNKNOWN_WEAPON;
+        AC_Info[playerid][acAmmo][i] = 0;
+    }
 
-    return Y_HOOKS_CONTINUE_RETURN_1;
-}
+    AC_Info[playerid][acInt] = 0;
+    AC_Info[playerid][acVW] = 0;
 
-hook OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ) {
-
-    // Cuvanje kliknutih koordinata u igracevu promljenjivu
-
-    clickedPos[playerid][0] = fX;
-    clickedPos[playerid][1] = fY;
-    clickedPos[playerid][2] = fZ;
-
-    // Pozivanje lokalne funkcija / "custom" callbacka da se ne bi pravio timer bez razloga.
-
-    CallLocalFunction("AntiCheat_OnPlayerClickMap", "dfff", playerid, clickedPos[playerid][0], clickedPos[playerid][1], clickedPos[playerid][2]);
-
-    return (true);
-}
-
-hook OnClientCheckResponse(playerid, actionid, memaddr, retndata) {
+    AC_Info[playerid][acPos][0] = 0.00;
+    AC_Info[playerid][acPos][1] = 0.00;
+    AC_Info[playerid][acPos][2] = 0.00;
     
-    if(actionid == CHEAT_TYPE_MONEY) {
+    AC_Info[playerid][acSpecialAction] = SPECIAL_ACTION_NONE;
 
-        if(retndata > 10000000 || retndata < 0) {
-
-            SendClientMessage(playerid, 0xff006fff, "(anticheat): "c_white"Money hack detected!");
-            SendClientMessageToAll(0xff006fff, "(anticheat): "c_white"Igrac %s je kickovan zbog moguceg : {ff006f}%d | MONEY HACK", ReturnPlayerName(playerid), CHEAT_TYPE_MONEY);
-
-            defer ac_Kick(playerid);
-        }
-    }
+    SendClientCheck(playerid, 69, 0x00B7CE50, 0, 4);
 
     return Y_HOOKS_CONTINUE_RETURN_1;
 }
 
-public AntiCheat_OnPlayerClickMap(playerid, Float:positionX, Float:positionY, Float:positionZ) {
+//*==============================================================================
+//*--->>> Include
+//*==============================================================================
 
-    if(IsPlayerAdmin(playerid)) return true;
+#include "modules/anti-cheat/weapon-hack.pwn"
 
-    // Ukoliko su trenutacne koordinate igraca jednake kliknutim koordinatama na mapi, moguc cheat, kick!!!
-
-    new Float:pPos[3];
-    GetPlayerPos(playerid, pPos[0], pPos[1], pPos[2]);
-
-    if(clickedPos[playerid][0] == pPos[0] && clickedPos[playerid][1] == pPos[1] && clickedPos[playerid][2] == pPos[2] ) {
-
-        SendClientMessage(playerid, 0xff006fff, "(anticheat): "c_white"Teleport hack detected!");
-        SendClientMessageToAll(0xff006fff, "(anticheat): "c_white"Igrac %s je kickovan zbog moguceg : {ff006f}%d | TELEPORT HACK", ReturnPlayerName(playerid), CHEAT_TYPE_MAP_TELEPORT);
-
-        defer ac_Kick(playerid);
-    }
-
-    return (true);
-}
+#if defined _ALS_GivePlayerMoney
+    #undef GivePlayerMoney
+#else
+    #define _ALS_GivePlayerMoney
+#endif
+#define GivePlayerMoney ac_GivePlayerMoney

@@ -16,10 +16,12 @@
 #include <ylessinc\YSI_Coding\y_hooks>
 
 hook OnPlayerKeyStateChange(playerid, KEY:newkeys, KEY:oldkeys)
-{
+{   
+    if(IsPlayerLockpicking(playerid))
+        return Y_HOOKS_CONTINUE_RETURN_1;
+
 	if(GetPlayerState(playerid) == PLAYER_STATE_DRIVER)
     {
-
         if(newkeys & KEY_ACTION)
         {
             new veh = GetPlayerVehicleID(playerid),

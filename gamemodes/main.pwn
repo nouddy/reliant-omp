@@ -42,12 +42,14 @@
 #define x_orange        0xDAA520FF
 #define x_white			0xffffffff
 #define x_lblue			0x7DAEDFFF
+#define x_green 		0x776444FF
 
 #define c_server		"{737be1}"
 #define c_red			"{ff0000}"
 #define c_orange		"{daa520}"
 #define c_white         "{ffffff}"
 #define c_lblue			"{7DAEDF}"
+#define c_green 		"{776444}"
 
 #define PRESSED(%0) \
 	(((newkeys & (%0)) == (%0)) && ((oldkeys & (%0)) != (%0)))
@@ -445,12 +447,15 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 
 //*			>> [ Custom Includes ] << 
 
+#include "utils/chat.pwn"
+
 #include "modules/db_config.pwn"
 #include "modules/db_functions.pwn"
 
 //*			>> [ ACCOUNT ] <<
 
 #include "modules/main/account.pwn"
+#include "modules/main/introduction.pwn"
 
 //*			>> [ STAFF ] <<
 
@@ -462,6 +467,7 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 //*			>> [ VEHICLE ] <<
 
 #include "modules/vehicle/functions.pwn"
+#include "modules/vehicle/lockpick.pwn"
 #include "modules/vehicle/main.pwn"
 
 //*			>> [ MISC ] <<
@@ -486,6 +492,7 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 //*			>> [ MAPS - EXTERIORS ] <<
 
 #include "maps/bank-exterior.pwn"
+#include "maps/chernobyl.pwn"
 
 YCMD:cls(playerid, params[], help) 
 {
