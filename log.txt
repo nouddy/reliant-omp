@@ -30120,3 +30120,2068 @@ Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
 [2024-11-19T22:09:51+0100] [Info] >> Reliant Gamemode Started
 [2024-11-19T22:09:51+0100] [Info] -                                     -
 [2024-11-19T22:09:51+0100] [Info] Legacy Network started on port 7777
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:25:43+0100] [Info] 
+[2024-12-03T19:25:43+0100] [Info]  ===============================
+[2024-12-03T19:25:43+0100] [Info] 
+[2024-12-03T19:25:43+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:25:43+0100] [Info] 
+[2024-12-03T19:25:43+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:25:43+0100] [Info] 
+[2024-12-03T19:25:43+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:25:43+0100] [Info] 
+[2024-12-03T19:25:43+0100] [Info]  ===============================
+[2024-12-03T19:25:43+0100] [Info] 
+[2024-12-03T19:25:43+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:25:43+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:25:43+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:25:43+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:25:43+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:25:43+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:25:44+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:25:44+0100] [Info]  
+[2024-12-03T19:25:44+0100] [Info]  
+[2024-12-03T19:25:44+0100] [Info]          ==============================================================
+[2024-12-03T19:25:44+0100] [Info]          |                                                            |
+[2024-12-03T19:25:44+0100] [Info]          |                                                            |
+[2024-12-03T19:25:44+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:25:44+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:25:44+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:25:44+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:25:44+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:25:44+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:25:44+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:25:44+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:25:44+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:25:44+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:25:44+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:25:44+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:25:44+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:25:44+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:25:44+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:25:44+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:25:44+0100] [Info]          |                                                            |
+[2024-12-03T19:25:44+0100] [Info]          |                                                            |
+[2024-12-03T19:25:44+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:25:44+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:25:44+0100] [Info]          |                                                            |
+[2024-12-03T19:25:44+0100] [Info]          |                                                            |
+[2024-12-03T19:25:44+0100] [Info]          ==============================================================
+[2024-12-03T19:25:44+0100] [Info]  
+[2024-12-03T19:25:44+0100] [Info]  
+[2024-12-03T19:25:44+0100] [Info]  ========================================== 
+[2024-12-03T19:25:44+0100] [Info]  |                                        | 
+[2024-12-03T19:25:44+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:25:44+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:25:44+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:25:44+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:25:44+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:25:44+0100] [Info]  |                                        | 
+[2024-12-03T19:25:44+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:25:44+0100] [Info]  |                                        | 
+[2024-12-03T19:25:44+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:25:44+0100] [Info]  |                                        | 
+[2024-12-03T19:25:44+0100] [Info]  |             Done in 153ms!             | 
+[2024-12-03T19:25:44+0100] [Info]  |                                        | 
+[2024-12-03T19:25:44+0100] [Info]  ========================================== 
+[2024-12-03T19:25:44+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:25:44+0100] [Info]  |                                        | 
+[2024-12-03T19:25:44+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:25:44+0100] [Info]  | Started:     03 Dec 2024 - 19:25:44    | 
+[2024-12-03T19:25:44+0100] [Info]  |                                        | 
+[2024-12-03T19:25:44+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:25:44+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:25:44+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:25:44+0100] [Info]  | Built:       03 Dec 2024 - 19:25:35    | 
+[2024-12-03T19:25:44+0100] [Info]  |                                        | 
+[2024-12-03T19:25:44+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:25:44+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:25:44+0100] [Info]  |                                        | 
+[2024-12-03T19:25:44+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:25:44+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:25:44+0100] [Info]  |                                        | 
+[2024-12-03T19:25:44+0100] [Info]  ========================================== 
+[2024-12-03T19:25:44+0100] [Info]  
+[2024-12-03T19:25:44+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:25:44+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:25:44+0100] [Info] [debug] #0 00007bf4 in ?? (0, 106, 45132340, 1598650688) in <unknown>
+[2024-12-03T19:25:44+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132372, 1598650688) in <unknown>
+[2024-12-03T19:25:44+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:25:44+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:25:44+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:25:44+0100] [Info]  
+[2024-12-03T19:25:44+0100] [Info] [MYSQL] Database connection failed, check mysql.ini!
+[2024-12-03T19:25:44+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:25:44+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:25:44+0100] [Info] [debug] #0 00065b7c in ?? () in <unknown>
+[2024-12-03T19:25:44+0100] [Info] [debug] #1 0001c400 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:25:44+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:25:44+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:25:44+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:25:44+0100] [Info] -                                     -
+[2024-12-03T19:25:44+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:25:44+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:25:44+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:25:44+0100] [Info] -                                     -
+[2024-12-03T19:25:44+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:25:44+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:25:44+0100] [Info] -                                     -
+[2024-12-03T19:25:44+0100] [Info] Legacy Network started on port 7777
+[2024-12-03T19:25:55+0100] [Info] Couldn't announce legacy network to open.mp list.
+[2024-12-03T19:25:55+0100] [Info] 	[Server Error] Status: 406
+[2024-12-03T19:25:55+0100] [Info] 	[Server Error] Message: {"error":"failed to query server: socket read timed out"}
+[2024-12-03T19:25:55+0100] [Info] This won't affect the server's behaviour.
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:27:40+0100] [Info] 
+[2024-12-03T19:27:40+0100] [Info]  ===============================
+[2024-12-03T19:27:40+0100] [Info] 
+[2024-12-03T19:27:40+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:27:40+0100] [Info] 
+[2024-12-03T19:27:40+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:27:40+0100] [Info] 
+[2024-12-03T19:27:40+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:27:40+0100] [Info] 
+[2024-12-03T19:27:40+0100] [Info]  ===============================
+[2024-12-03T19:27:40+0100] [Info] 
+[2024-12-03T19:27:40+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:27:40+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:27:40+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:27:40+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:27:40+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:27:40+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:27:40+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:27:40+0100] [Info]  
+[2024-12-03T19:27:40+0100] [Info]  
+[2024-12-03T19:27:40+0100] [Info]          ==============================================================
+[2024-12-03T19:27:40+0100] [Info]          |                                                            |
+[2024-12-03T19:27:40+0100] [Info]          |                                                            |
+[2024-12-03T19:27:40+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:27:40+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:27:40+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:27:40+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:27:40+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:27:40+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:27:40+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:27:40+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:27:40+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:27:40+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:27:40+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:27:40+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:27:40+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:27:40+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:27:40+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:27:40+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:27:40+0100] [Info]          |                                                            |
+[2024-12-03T19:27:40+0100] [Info]          |                                                            |
+[2024-12-03T19:27:40+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:27:40+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:27:40+0100] [Info]          |                                                            |
+[2024-12-03T19:27:40+0100] [Info]          |                                                            |
+[2024-12-03T19:27:40+0100] [Info]          ==============================================================
+[2024-12-03T19:27:40+0100] [Info]  
+[2024-12-03T19:27:40+0100] [Info]  
+[2024-12-03T19:27:40+0100] [Info]  ========================================== 
+[2024-12-03T19:27:40+0100] [Info]  |                                        | 
+[2024-12-03T19:27:40+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:27:40+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:27:40+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:27:40+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:27:40+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:27:40+0100] [Info]  |                                        | 
+[2024-12-03T19:27:40+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:27:40+0100] [Info]  |                                        | 
+[2024-12-03T19:27:40+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:27:40+0100] [Info]  |                                        | 
+[2024-12-03T19:27:40+0100] [Info]  |             Done in 130ms!             | 
+[2024-12-03T19:27:40+0100] [Info]  |                                        | 
+[2024-12-03T19:27:40+0100] [Info]  ========================================== 
+[2024-12-03T19:27:40+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:27:40+0100] [Info]  |                                        | 
+[2024-12-03T19:27:40+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:27:40+0100] [Info]  | Started:     03 Dec 2024 - 19:27:40    | 
+[2024-12-03T19:27:40+0100] [Info]  |                                        | 
+[2024-12-03T19:27:40+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:27:40+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:27:40+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:27:40+0100] [Info]  | Built:       03 Dec 2024 - 19:25:35    | 
+[2024-12-03T19:27:40+0100] [Info]  |                                        | 
+[2024-12-03T19:27:40+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:27:40+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:27:40+0100] [Info]  |                                        | 
+[2024-12-03T19:27:40+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:27:40+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:27:40+0100] [Info]  |                                        | 
+[2024-12-03T19:27:40+0100] [Info]  ========================================== 
+[2024-12-03T19:27:40+0100] [Info]  
+[2024-12-03T19:27:40+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:27:40+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:27:40+0100] [Info] [debug] #0 00007bf4 in ?? (0, 106, 45132340, 1598650688) in <unknown>
+[2024-12-03T19:27:40+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132372, 1598650688) in <unknown>
+[2024-12-03T19:27:40+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:27:40+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:27:40+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:27:40+0100] [Info]  
+[2024-12-03T19:27:40+0100] [Info] [MYSQL] Connected to database succesfully
+[2024-12-03T19:27:40+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:27:40+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:27:40+0100] [Info] [debug] #0 00065b80 in ?? () in <unknown>
+[2024-12-03T19:27:40+0100] [Info] [debug] #1 0001c400 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:27:40+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:27:40+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:27:40+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:27:40+0100] [Info] -                                     -
+[2024-12-03T19:27:40+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:27:40+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:27:40+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:27:40+0100] [Info] -                                     -
+[2024-12-03T19:27:40+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:27:40+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:27:40+0100] [Info] -                                     -
+[2024-12-03T19:27:40+0100] [Info] Legacy Network started on port 7777
+[2024-12-03T19:27:51+0100] [Info] Couldn't announce legacy network to open.mp list.
+[2024-12-03T19:27:51+0100] [Info] 	[Server Error] Status: 406
+[2024-12-03T19:27:51+0100] [Info] 	[Server Error] Message: {"error":"failed to query server: socket read timed out"}
+[2024-12-03T19:27:51+0100] [Info] This won't affect the server's behaviour.
+[2024-12-03T19:28:31+0100] [Info] [connection] incoming connection: 127.0.0.1:50233 id: 0
+[2024-12-03T19:28:31+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:28:31+0100] [Warning] Invalid dialog ID -1 used.  Use `HidePlayerDialog()`.
+[2024-12-03T19:28:31+0100] [Info] [part] Eros_Bosandzeros has left the server (0:2)
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:28:45+0100] [Info] 
+[2024-12-03T19:28:45+0100] [Info]  ===============================
+[2024-12-03T19:28:45+0100] [Info] 
+[2024-12-03T19:28:45+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:28:45+0100] [Info] 
+[2024-12-03T19:28:45+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:28:45+0100] [Info] 
+[2024-12-03T19:28:45+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:28:45+0100] [Info] 
+[2024-12-03T19:28:45+0100] [Info]  ===============================
+[2024-12-03T19:28:45+0100] [Info] 
+[2024-12-03T19:28:45+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:28:45+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:28:45+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:28:45+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:28:45+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:28:45+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:28:45+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:28:45+0100] [Info]  
+[2024-12-03T19:28:45+0100] [Info]  
+[2024-12-03T19:28:45+0100] [Info]          ==============================================================
+[2024-12-03T19:28:45+0100] [Info]          |                                                            |
+[2024-12-03T19:28:45+0100] [Info]          |                                                            |
+[2024-12-03T19:28:45+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:28:45+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:28:45+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:28:45+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:28:45+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:28:45+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:28:45+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:28:45+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:28:45+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:28:45+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:28:45+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:28:45+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:28:45+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:28:45+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:28:45+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:28:45+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:28:45+0100] [Info]          |                                                            |
+[2024-12-03T19:28:45+0100] [Info]          |                                                            |
+[2024-12-03T19:28:45+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:28:45+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:28:45+0100] [Info]          |                                                            |
+[2024-12-03T19:28:45+0100] [Info]          |                                                            |
+[2024-12-03T19:28:45+0100] [Info]          ==============================================================
+[2024-12-03T19:28:45+0100] [Info]  
+[2024-12-03T19:28:45+0100] [Info]  
+[2024-12-03T19:28:45+0100] [Info]  ========================================== 
+[2024-12-03T19:28:45+0100] [Info]  |                                        | 
+[2024-12-03T19:28:45+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:28:45+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:28:45+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:28:45+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:28:45+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:28:45+0100] [Info]  |                                        | 
+[2024-12-03T19:28:45+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:28:45+0100] [Info]  |                                        | 
+[2024-12-03T19:28:45+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:28:45+0100] [Info]  |                                        | 
+[2024-12-03T19:28:45+0100] [Info]  |             Done in 147ms!             | 
+[2024-12-03T19:28:45+0100] [Info]  |                                        | 
+[2024-12-03T19:28:45+0100] [Info]  ========================================== 
+[2024-12-03T19:28:45+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:28:45+0100] [Info]  |                                        | 
+[2024-12-03T19:28:45+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:28:45+0100] [Info]  | Started:     03 Dec 2024 - 19:28:45    | 
+[2024-12-03T19:28:45+0100] [Info]  |                                        | 
+[2024-12-03T19:28:45+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:28:45+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:28:45+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:28:45+0100] [Info]  | Built:       03 Dec 2024 - 19:25:35    | 
+[2024-12-03T19:28:45+0100] [Info]  |                                        | 
+[2024-12-03T19:28:45+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:28:45+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:28:45+0100] [Info]  |                                        | 
+[2024-12-03T19:28:45+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:28:45+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:28:45+0100] [Info]  |                                        | 
+[2024-12-03T19:28:45+0100] [Info]  ========================================== 
+[2024-12-03T19:28:45+0100] [Info]  
+[2024-12-03T19:28:45+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:28:45+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:28:45+0100] [Info] [debug] #0 00007bf4 in ?? (0, 106, 45132340, 1598650688) in <unknown>
+[2024-12-03T19:28:45+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132372, 1598650688) in <unknown>
+[2024-12-03T19:28:45+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:28:45+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:28:45+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:28:45+0100] [Info]  
+[2024-12-03T19:28:45+0100] [Info] [MYSQL] Connected to database succesfully
+[2024-12-03T19:28:45+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:28:45+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:28:45+0100] [Info] [debug] #0 00065b80 in ?? () in <unknown>
+[2024-12-03T19:28:45+0100] [Info] [debug] #1 0001c400 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:28:45+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:28:45+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:28:45+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:28:45+0100] [Info] -                                     -
+[2024-12-03T19:28:45+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:28:45+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:28:45+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:28:45+0100] [Info] -                                     -
+[2024-12-03T19:28:45+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:28:45+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:28:45+0100] [Info] -                                     -
+[2024-12-03T19:28:45+0100] [Error] Unable to start legacy network on port 7777. Port in use?
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:29:44+0100] [Info] 
+[2024-12-03T19:29:44+0100] [Info]  ===============================
+[2024-12-03T19:29:44+0100] [Info] 
+[2024-12-03T19:29:44+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:29:44+0100] [Info] 
+[2024-12-03T19:29:44+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:29:44+0100] [Info] 
+[2024-12-03T19:29:44+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:29:44+0100] [Info] 
+[2024-12-03T19:29:44+0100] [Info]  ===============================
+[2024-12-03T19:29:44+0100] [Info] 
+[2024-12-03T19:29:44+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:29:44+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:29:44+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:29:45+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:29:45+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:29:45+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:29:45+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:29:45+0100] [Info]  
+[2024-12-03T19:29:45+0100] [Info]  
+[2024-12-03T19:29:45+0100] [Info]          ==============================================================
+[2024-12-03T19:29:45+0100] [Info]          |                                                            |
+[2024-12-03T19:29:45+0100] [Info]          |                                                            |
+[2024-12-03T19:29:45+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:29:45+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:29:45+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:29:45+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:29:45+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:29:45+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:29:45+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:29:45+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:29:45+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:29:45+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:29:45+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:29:45+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:29:45+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:29:45+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:29:45+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:29:45+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:29:45+0100] [Info]          |                                                            |
+[2024-12-03T19:29:45+0100] [Info]          |                                                            |
+[2024-12-03T19:29:45+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:29:45+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:29:45+0100] [Info]          |                                                            |
+[2024-12-03T19:29:45+0100] [Info]          |                                                            |
+[2024-12-03T19:29:45+0100] [Info]          ==============================================================
+[2024-12-03T19:29:45+0100] [Info]  
+[2024-12-03T19:29:45+0100] [Info]  
+[2024-12-03T19:29:45+0100] [Info]  ========================================== 
+[2024-12-03T19:29:45+0100] [Info]  |                                        | 
+[2024-12-03T19:29:45+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:29:45+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:29:45+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:29:45+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:29:45+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:29:45+0100] [Info]  |                                        | 
+[2024-12-03T19:29:45+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:29:45+0100] [Info]  |                                        | 
+[2024-12-03T19:29:45+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:29:45+0100] [Info]  |                                        | 
+[2024-12-03T19:29:45+0100] [Info]  |             Done in 131ms!             | 
+[2024-12-03T19:29:45+0100] [Info]  |                                        | 
+[2024-12-03T19:29:45+0100] [Info]  ========================================== 
+[2024-12-03T19:29:45+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:29:45+0100] [Info]  |                                        | 
+[2024-12-03T19:29:45+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:29:45+0100] [Info]  | Started:     03 Dec 2024 - 19:29:45    | 
+[2024-12-03T19:29:45+0100] [Info]  |                                        | 
+[2024-12-03T19:29:45+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:29:45+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:29:45+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:29:45+0100] [Info]  | Built:       03 Dec 2024 - 19:25:35    | 
+[2024-12-03T19:29:45+0100] [Info]  |                                        | 
+[2024-12-03T19:29:45+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:29:45+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:29:45+0100] [Info]  |                                        | 
+[2024-12-03T19:29:45+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:29:45+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:29:45+0100] [Info]  |                                        | 
+[2024-12-03T19:29:45+0100] [Info]  ========================================== 
+[2024-12-03T19:29:45+0100] [Info]  
+[2024-12-03T19:29:45+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:29:45+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:29:45+0100] [Info] [debug] #0 00007bf4 in ?? (0, 106, 45132340, 1598650688) in <unknown>
+[2024-12-03T19:29:45+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132372, 1598650688) in <unknown>
+[2024-12-03T19:29:45+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:29:45+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:29:45+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:29:45+0100] [Info]  
+[2024-12-03T19:29:45+0100] [Info] [MYSQL] Connected to database succesfully
+[2024-12-03T19:29:45+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:29:45+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:29:45+0100] [Info] [debug] #0 00065b80 in ?? () in <unknown>
+[2024-12-03T19:29:45+0100] [Info] [debug] #1 0001c400 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:29:45+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:29:45+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:29:45+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:29:45+0100] [Info] -                                     -
+[2024-12-03T19:29:45+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:29:45+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:29:45+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:29:45+0100] [Info] -                                     -
+[2024-12-03T19:29:45+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:29:45+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:29:45+0100] [Info] -                                     -
+[2024-12-03T19:29:45+0100] [Info] Legacy Network started on port 7777
+[2024-12-03T19:29:55+0100] [Info] Couldn't announce legacy network to open.mp list.
+[2024-12-03T19:29:55+0100] [Info] 	[Server Error] Status: 406
+[2024-12-03T19:29:55+0100] [Info] 	[Server Error] Message: {"error":"failed to query server: socket read timed out"}
+[2024-12-03T19:29:55+0100] [Info] This won't affect the server's behaviour.
+[2024-12-03T19:29:59+0100] [Info] [connection] incoming connection: 127.0.0.1:64383 id: 0
+[2024-12-03T19:29:59+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:30:16+0100] [Warning] Invalid dialog ID -1 used.  Use `HidePlayerDialog()`.
+[2024-12-03T19:30:16+0100] [Info] [debug] Server crashed due to an unknown error
+[2024-12-03T19:30:17+0100] [Info] [debug] Native backtrace:
+[2024-12-03T19:30:17+0100] [Info] [debug] #0 7b36a92d in ?? () in components\Pawn.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] #1 7b36b50b in ?? () in components\Pawn.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] #2 50d435e9 in ?? () in plugins\mysql.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] #3 50d46688 in ?? () in plugins\mysql.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] #4 50d2c52e in ?? () in plugins\mysql.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] #5 50d2dc7f in ?? () in plugins\mysql.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] #6 50d2e3d3 in ?? () in plugins\mysql.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] #7 7b366801 in ?? () in components\Pawn.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] #8 006cfe2e in ?? () in omp-server.exe
+[2024-12-03T19:30:17+0100] [Info] [debug] #9 006c92a6 in ?? () in omp-server.exe
+[2024-12-03T19:30:17+0100] [Info] [debug] #10 008eea90 in ?? () in omp-server.exe
+[2024-12-03T19:30:17+0100] [Info] [debug] #11 75ac7ba9 in ?? () in C:\Windows\System32\KERNEL32.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] #12 775dc0cb in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] #13 775dc04f in ?? () in C:\Windows\SYSTEM32\ntdll.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] Registers:
+[2024-12-03T19:30:17+0100] [Info] [debug] EAX: 00d5fa54 EBX: 0606c330 ECX: 0605892c EDX: 00000000
+[2024-12-03T19:30:17+0100] [Info] [debug] ESI: 0606c020 EDI: fffec5f8 EBP: 00000008 ESP: 00d5f8f0
+[2024-12-03T19:30:17+0100] [Info] [debug] EIP: 7b36a92d EFLAGS: 00210246
+[2024-12-03T19:30:17+0100] [Info] [debug] Stack:
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000000: 038885f8 02f1f718 03e97580 00d5fa84
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000020: 50d27f86 02f1f718 ffffd8bf 00d5fa54
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000040: 00d5fa5c 50d26e58 0947dfd8 3f3f2f45
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000060: 50d228a5 0947fe00 00000002 00000000
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000080: 02f1f718 00000064 00000005 ffffd8bf
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000000a0: 00000000 00d5fa84 00d5fa88 50d57ca0
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000000c0: 00000000 00d5fa3c 0947fd00 00acd3bb
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000000e0: 02d87000 775bca93 02f1f718 00d5fa68
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000100: 00000007 00000000 00d5f974 0000000f
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000120: 03e49900 00000000 0000000f 00000000
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000140: 0000000f 00000000 0000000f 02f1f718
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000160: 0390f924 50d533ad 00000002 00d5facc
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000180: 50d5a888 3f3f2f9d 00d5fac0 50d5356b
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000001a0: 50d2c4c0 0948f028 0947fe3c 0947fe30
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000001c0: 00000030 00000000 0000000f 3f3f2fd5
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000001e0: 50d46688 0000047a 0947ffe8 00d5fb5c
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000200: 09474ea8 00d5fb30 50d2c52e 00d5fb20
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000220: 50d3c5eb 00000001 00000000 0000000f
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000240: 00d5fb60 50d2dc7f 0000047a 0947ff00
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000260: 0000000f 0390f740 0390f758 0948f020
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000280: 0390fa90 0390f95c 0390f758 00d5fbd0
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000002a0: 00d5fba0 eaae17c4 000447fd 7b380be9
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000002c0: 000447fd eaae17c4 7ffea000 057dc8a4
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000002e0: 00d5fe04 7b387990 ffffffff 51c530c0
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000300: 00d5fc68 006cfe2e 0000139b 00000000
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000320: 0000139b eaae17c4 eaae17c4 000447fd
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000340: 02becd4c 0e7fec98 00001388 00000000
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000360: 02becd60 0000000c 00000000 00000000
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+00000380: 01122140 00d5fc4c 00000004 00000004
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000003a0: 00d5fe1c 006c8047 00000017 0000001f
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000003c0: 00000013 0000001f 01193708 01007470
+[2024-12-03T19:30:17+0100] [Info] [debug] ESP+000003e0: 00650000 01121d5c 01121d50 01157a30
+[2024-12-03T19:30:17+0100] [Info] [debug] Loaded modules:
+[2024-12-03T19:30:17+0100] [Info] [debug] 006c0000 - 009a0000 omp-server.exe
+[2024-12-03T19:30:17+0100] [Info] [debug] 77570000 - 77722000 ntdll.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 75ab0000 - 75ba0000 KERNEL32.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] 768b0000 - 76b32000 KERNELBASE.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 76ca0000 - 76cff000 WS2_32.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 76570000 - 7662a000 RPCRT4.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 76eb0000 - 77555000 SHELL32.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 76e10000 - 76e89000 msvcp_win.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 76450000 - 76562000 ucrtbase.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 75370000 - 75519000 USER32.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 757b0000 - 757ca000 win32u.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 759c0000 - 759e3000 GDI32.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 76310000 - 763f2000 gdi32full.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 751a0000 - 752a2000 CRYPT32.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 75a10000 - 75a8f000 ADVAPI32.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 76b40000 - 76c04000 msvcrt.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 75860000 - 758e5000 sechost.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 76e90000 - 76eaa000 bcrypt.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 750e0000 - 75111000 WINMM.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 70ec0000 - 70f2d000 MSVCP140.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 70f30000 - 70f45000 VCRUNTIME140.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 75830000 - 75855000 IMM32.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] 51d10000 - 51d32000 Actors.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51cf0000 - 51d0c000 Checkpoints.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51c80000 - 51c9f000 Classes.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51c40000 - 51c71000 Console.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51a20000 - 51a8c000 CustomModels.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51950000 - 51a17000 Databases.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51c20000 - 51c3d000 Dialogs.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51920000 - 51941000 GangZones.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 518d0000 - 518f5000 LegacyConfig.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51820000 - 518ca000 LegacyNetwork.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 517f0000 - 51811000 Menus.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 517b0000 - 517e2000 Objects.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 7b350000 - 7b4eb000 Pawn.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 76400000 - 7644b000 SHLWAPI.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 513b0000 - 513d1000 Pickups.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51380000 - 513a9000 Recordings.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51350000 - 5137a000 sscanf.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51320000 - 51345000 TextDraws.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 512f0000 - 51314000 TextLabels.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 51790000 - 517a9000 Timers.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 78020000 - 79ccc000 Unicode.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 512d0000 - 512ed000 Variables.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 50fc0000 - 50fef000 Vehicles.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 75140000 - 75153000 kernel.appcore.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 79cd0000 - 79d59000 crashdetect.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] 79d60000 - 79dd1000 MSVCP120.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 79de0000 - 79ece000 MSVCR120.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 50d20000 - 50d6e000 mysql.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] 50fa0000 - 50fba000 log-core.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 79ed0000 - 79f9d000 libmariadb.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 747f0000 - 747fa000 Secur32.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 74ad0000 - 74af6000 SSPICLI.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] 74db0000 - 74dbb000 CRYPTBASE.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] 6fb60000 - 6fb72000 napinsp.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 6fb40000 - 6fb56000 pnrpnsp.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 74bd0000 - 74c21000 mswsock.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 74a00000 - 74ac2000 DNSAPI.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 74d20000 - 74d44000 IPHLPAPI.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] 75a90000 - 75a97000 NSI.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 6fb30000 - 6fb3e000 winrnr.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 6fad0000 - 6fae1000 wshbth.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 6fab0000 - 6face000 nlansp_c.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 749f0000 - 749f8000 rasadhlp.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 79fa0000 - 7a006000 streamer.DLL
+[2024-12-03T19:30:17+0100] [Info] [debug] 6e200000 - 6e25d000 fwpuclnt.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 76d00000 - 76d63000 bcryptprimitives.dll
+[2024-12-03T19:30:17+0100] [Info] [debug] 75190000 - 7519e000 MSASN1.dll
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:33:41+0100] [Info] 
+[2024-12-03T19:33:41+0100] [Info]  ===============================
+[2024-12-03T19:33:41+0100] [Info] 
+[2024-12-03T19:33:41+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:33:41+0100] [Info] 
+[2024-12-03T19:33:41+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:33:41+0100] [Info] 
+[2024-12-03T19:33:41+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:33:41+0100] [Info] 
+[2024-12-03T19:33:41+0100] [Info]  ===============================
+[2024-12-03T19:33:41+0100] [Info] 
+[2024-12-03T19:33:41+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:33:41+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:33:41+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:33:41+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:33:41+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:33:41+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:33:41+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:33:41+0100] [Info]  
+[2024-12-03T19:33:41+0100] [Info]  
+[2024-12-03T19:33:41+0100] [Info]          ==============================================================
+[2024-12-03T19:33:41+0100] [Info]          |                                                            |
+[2024-12-03T19:33:41+0100] [Info]          |                                                            |
+[2024-12-03T19:33:41+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:33:41+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:33:41+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:33:41+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:33:41+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:33:41+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:33:41+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:33:41+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:33:41+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:33:41+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:33:41+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:33:41+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:33:41+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:33:41+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:33:41+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:33:41+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:33:41+0100] [Info]          |                                                            |
+[2024-12-03T19:33:41+0100] [Info]          |                                                            |
+[2024-12-03T19:33:41+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:33:41+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:33:41+0100] [Info]          |                                                            |
+[2024-12-03T19:33:41+0100] [Info]          |                                                            |
+[2024-12-03T19:33:41+0100] [Info]          ==============================================================
+[2024-12-03T19:33:41+0100] [Info]  
+[2024-12-03T19:33:41+0100] [Info]  
+[2024-12-03T19:33:41+0100] [Info]  ========================================== 
+[2024-12-03T19:33:41+0100] [Info]  |                                        | 
+[2024-12-03T19:33:41+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:33:41+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:33:41+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:33:41+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:33:41+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:33:41+0100] [Info]  |                                        | 
+[2024-12-03T19:33:41+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:33:41+0100] [Info]  |                                        | 
+[2024-12-03T19:33:41+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:33:41+0100] [Info]  |                                        | 
+[2024-12-03T19:33:41+0100] [Info]  |             Done in 150ms!             | 
+[2024-12-03T19:33:41+0100] [Info]  |                                        | 
+[2024-12-03T19:33:41+0100] [Info]  ========================================== 
+[2024-12-03T19:33:41+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:33:41+0100] [Info]  |                                        | 
+[2024-12-03T19:33:41+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:33:41+0100] [Info]  | Started:     03 Dec 2024 - 19:33:41    | 
+[2024-12-03T19:33:41+0100] [Info]  |                                        | 
+[2024-12-03T19:33:41+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:33:41+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:33:41+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:33:41+0100] [Info]  | Built:       03 Dec 2024 - 19:25:35    | 
+[2024-12-03T19:33:41+0100] [Info]  |                                        | 
+[2024-12-03T19:33:41+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:33:41+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:33:41+0100] [Info]  |                                        | 
+[2024-12-03T19:33:41+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:33:41+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:33:41+0100] [Info]  |                                        | 
+[2024-12-03T19:33:41+0100] [Info]  ========================================== 
+[2024-12-03T19:33:41+0100] [Info]  
+[2024-12-03T19:33:41+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:33:41+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:33:41+0100] [Info] [debug] #0 00007bf4 in ?? (0, 106, 45132340, 1598650688) in <unknown>
+[2024-12-03T19:33:41+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132372, 1598650688) in <unknown>
+[2024-12-03T19:33:41+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:33:41+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:33:41+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:33:41+0100] [Info]  
+[2024-12-03T19:33:41+0100] [Info] [MYSQL] Connected to database succesfully
+[2024-12-03T19:33:41+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:33:41+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:33:41+0100] [Info] [debug] #0 00065b80 in ?? () in <unknown>
+[2024-12-03T19:33:41+0100] [Info] [debug] #1 0001c400 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:33:41+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:33:41+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:33:41+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:33:41+0100] [Info] -                                     -
+[2024-12-03T19:33:41+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:33:41+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:33:41+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:33:41+0100] [Info] -                                     -
+[2024-12-03T19:33:41+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:33:41+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:33:41+0100] [Info] -                                     -
+[2024-12-03T19:33:41+0100] [Info] Legacy Network started on port 7777
+[2024-12-03T19:33:52+0100] [Info] Couldn't announce legacy network to open.mp list.
+[2024-12-03T19:33:52+0100] [Info] 	[Server Error] Status: 406
+[2024-12-03T19:33:52+0100] [Info] 	[Server Error] Message: {"error":"failed to query server: socket read timed out"}
+[2024-12-03T19:33:52+0100] [Info] This won't affect the server's behaviour.
+[2024-12-03T19:34:35+0100] [Info] [connection] incoming connection: 127.0.0.1:55614 id: 0
+[2024-12-03T19:34:35+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:34:40+0100] [Warning] Invalid dialog ID -1 used.  Use `HidePlayerDialog()`.
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:36:01+0100] [Info] 
+[2024-12-03T19:36:01+0100] [Info]  ===============================
+[2024-12-03T19:36:01+0100] [Info] 
+[2024-12-03T19:36:01+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:36:01+0100] [Info] 
+[2024-12-03T19:36:01+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:36:01+0100] [Info] 
+[2024-12-03T19:36:01+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:36:01+0100] [Info] 
+[2024-12-03T19:36:01+0100] [Info]  ===============================
+[2024-12-03T19:36:01+0100] [Info] 
+[2024-12-03T19:36:01+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:36:01+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:36:01+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:36:01+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:36:01+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:36:01+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:36:01+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:36:01+0100] [Info]  
+[2024-12-03T19:36:01+0100] [Info]  
+[2024-12-03T19:36:01+0100] [Info]          ==============================================================
+[2024-12-03T19:36:01+0100] [Info]          |                                                            |
+[2024-12-03T19:36:01+0100] [Info]          |                                                            |
+[2024-12-03T19:36:01+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:36:01+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:36:01+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:36:01+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:36:01+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:36:01+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:36:01+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:36:01+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:36:01+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:36:01+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:36:01+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:36:01+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:36:01+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:36:01+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:36:01+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:36:01+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:36:01+0100] [Info]          |                                                            |
+[2024-12-03T19:36:01+0100] [Info]          |                                                            |
+[2024-12-03T19:36:01+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:36:01+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:36:01+0100] [Info]          |                                                            |
+[2024-12-03T19:36:01+0100] [Info]          |                                                            |
+[2024-12-03T19:36:01+0100] [Info]          ==============================================================
+[2024-12-03T19:36:01+0100] [Info]  
+[2024-12-03T19:36:01+0100] [Info]  
+[2024-12-03T19:36:01+0100] [Info]  ========================================== 
+[2024-12-03T19:36:01+0100] [Info]  |                                        | 
+[2024-12-03T19:36:01+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:36:01+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:36:01+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:36:01+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:36:01+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:36:01+0100] [Info]  |                                        | 
+[2024-12-03T19:36:01+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:36:01+0100] [Info]  |                                        | 
+[2024-12-03T19:36:01+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:36:01+0100] [Info]  |                                        | 
+[2024-12-03T19:36:01+0100] [Info]  |             Done in 125ms!             | 
+[2024-12-03T19:36:01+0100] [Info]  |                                        | 
+[2024-12-03T19:36:01+0100] [Info]  ========================================== 
+[2024-12-03T19:36:01+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:36:01+0100] [Info]  |                                        | 
+[2024-12-03T19:36:01+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:36:01+0100] [Info]  | Started:     03 Dec 2024 - 19:36:01    | 
+[2024-12-03T19:36:01+0100] [Info]  |                                        | 
+[2024-12-03T19:36:01+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:36:01+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:36:01+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:36:01+0100] [Info]  | Built:       03 Dec 2024 - 19:25:35    | 
+[2024-12-03T19:36:01+0100] [Info]  |                                        | 
+[2024-12-03T19:36:01+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:36:01+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:36:01+0100] [Info]  |                                        | 
+[2024-12-03T19:36:01+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:36:01+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:36:01+0100] [Info]  |                                        | 
+[2024-12-03T19:36:01+0100] [Info]  ========================================== 
+[2024-12-03T19:36:01+0100] [Info]  
+[2024-12-03T19:36:01+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:36:01+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:36:01+0100] [Info] [debug] #0 00007bf4 in ?? (0, 106, 45132340, 1598650688) in <unknown>
+[2024-12-03T19:36:01+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132372, 1598650688) in <unknown>
+[2024-12-03T19:36:01+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:36:01+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:36:01+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:36:01+0100] [Info]  
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:36:18+0100] [Info] 
+[2024-12-03T19:36:18+0100] [Info]  ===============================
+[2024-12-03T19:36:18+0100] [Info] 
+[2024-12-03T19:36:18+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:36:18+0100] [Info] 
+[2024-12-03T19:36:18+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:36:18+0100] [Info] 
+[2024-12-03T19:36:18+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:36:18+0100] [Info] 
+[2024-12-03T19:36:18+0100] [Info]  ===============================
+[2024-12-03T19:36:18+0100] [Info] 
+[2024-12-03T19:36:18+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:36:18+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:36:18+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:36:18+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:36:18+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:36:18+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:36:18+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:36:18+0100] [Info]  
+[2024-12-03T19:36:18+0100] [Info]  
+[2024-12-03T19:36:18+0100] [Info]          ==============================================================
+[2024-12-03T19:36:18+0100] [Info]          |                                                            |
+[2024-12-03T19:36:18+0100] [Info]          |                                                            |
+[2024-12-03T19:36:18+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:36:18+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:36:18+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:36:18+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:36:18+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:36:18+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:36:18+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:36:18+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:36:18+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:36:18+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:36:18+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:36:18+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:36:18+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:36:18+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:36:18+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:36:18+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:36:18+0100] [Info]          |                                                            |
+[2024-12-03T19:36:18+0100] [Info]          |                                                            |
+[2024-12-03T19:36:18+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:36:18+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:36:18+0100] [Info]          |                                                            |
+[2024-12-03T19:36:18+0100] [Info]          |                                                            |
+[2024-12-03T19:36:18+0100] [Info]          ==============================================================
+[2024-12-03T19:36:18+0100] [Info]  
+[2024-12-03T19:36:18+0100] [Info]  
+[2024-12-03T19:36:18+0100] [Info]  ========================================== 
+[2024-12-03T19:36:18+0100] [Info]  |                                        | 
+[2024-12-03T19:36:18+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:36:18+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:36:18+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:36:18+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:36:18+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:36:18+0100] [Info]  |                                        | 
+[2024-12-03T19:36:18+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:36:18+0100] [Info]  |                                        | 
+[2024-12-03T19:36:18+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:36:18+0100] [Info]  |                                        | 
+[2024-12-03T19:36:18+0100] [Info]  |             Done in 131ms!             | 
+[2024-12-03T19:36:18+0100] [Info]  |                                        | 
+[2024-12-03T19:36:18+0100] [Info]  ========================================== 
+[2024-12-03T19:36:18+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:36:18+0100] [Info]  |                                        | 
+[2024-12-03T19:36:18+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:36:18+0100] [Info]  | Started:     03 Dec 2024 - 19:36:18    | 
+[2024-12-03T19:36:18+0100] [Info]  |                                        | 
+[2024-12-03T19:36:18+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:36:18+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:36:18+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:36:18+0100] [Info]  | Built:       03 Dec 2024 - 19:36:07    | 
+[2024-12-03T19:36:18+0100] [Info]  |                                        | 
+[2024-12-03T19:36:18+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:36:18+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:36:18+0100] [Info]  |                                        | 
+[2024-12-03T19:36:18+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:36:18+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:36:18+0100] [Info]  |                                        | 
+[2024-12-03T19:36:18+0100] [Info]  ========================================== 
+[2024-12-03T19:36:18+0100] [Info]  
+[2024-12-03T19:36:18+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:36:18+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:36:18+0100] [Info] [debug] #0 00007bf4 in ?? (0, 106, 45132336, 1598650688) in <unknown>
+[2024-12-03T19:36:19+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132368, 1598650688) in <unknown>
+[2024-12-03T19:36:19+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:36:19+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:36:19+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:36:19+0100] [Info]  
+[2024-12-03T19:36:19+0100] [Info] [MYSQL] Connected to database succesfully
+[2024-12-03T19:36:19+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:36:19+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:36:19+0100] [Info] [debug] #0 00065b80 in ?? () in <unknown>
+[2024-12-03T19:36:19+0100] [Info] [debug] #1 0001c400 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:36:19+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:36:19+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:36:19+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:36:19+0100] [Info] -                                     -
+[2024-12-03T19:36:19+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:36:19+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:36:19+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:36:19+0100] [Info] -                                     -
+[2024-12-03T19:36:19+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:36:19+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:36:19+0100] [Info] -                                     -
+[2024-12-03T19:36:19+0100] [Info] Legacy Network started on port 7777
+[2024-12-03T19:36:29+0100] [Info] Couldn't announce legacy network to open.mp list.
+[2024-12-03T19:36:29+0100] [Info] 	[Server Error] Status: 406
+[2024-12-03T19:36:29+0100] [Info] 	[Server Error] Message: {"error":"failed to query server: socket read timed out"}
+[2024-12-03T19:36:29+0100] [Info] This won't affect the server's behaviour.
+[2024-12-03T19:36:36+0100] [Info] [connection] incoming connection: 127.0.0.1:58007 id: 0
+[2024-12-03T19:36:36+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:36:40+0100] [Warning] Invalid dialog ID -1 used.  Use `HidePlayerDialog()`.
+[2024-12-03T19:37:49+0100] [Info] [part] Eros_Bosandzeros has left the server (0:1)
+[2024-12-03T19:38:08+0100] [Info] [connection] incoming connection: 127.0.0.1:50570 id: 0
+[2024-12-03T19:38:08+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:39:06+0100] [Info] [part] Eros_Bosandzeros has left the server (0:1)
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:40:10+0100] [Info] 
+[2024-12-03T19:40:10+0100] [Info]  ===============================
+[2024-12-03T19:40:10+0100] [Info] 
+[2024-12-03T19:40:10+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:40:10+0100] [Info] 
+[2024-12-03T19:40:10+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:40:10+0100] [Info] 
+[2024-12-03T19:40:10+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:40:10+0100] [Info] 
+[2024-12-03T19:40:10+0100] [Info]  ===============================
+[2024-12-03T19:40:10+0100] [Info] 
+[2024-12-03T19:40:10+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:40:10+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:40:10+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:40:10+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:40:10+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:40:10+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:40:10+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:40:10+0100] [Info]  
+[2024-12-03T19:40:10+0100] [Info]  
+[2024-12-03T19:40:10+0100] [Info]          ==============================================================
+[2024-12-03T19:40:10+0100] [Info]          |                                                            |
+[2024-12-03T19:40:10+0100] [Info]          |                                                            |
+[2024-12-03T19:40:10+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:40:10+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:40:10+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:40:11+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:40:11+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:40:11+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:40:11+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:40:11+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:40:11+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:40:11+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:40:11+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:40:11+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:40:11+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:40:11+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:40:11+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:40:11+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:40:11+0100] [Info]          |                                                            |
+[2024-12-03T19:40:11+0100] [Info]          |                                                            |
+[2024-12-03T19:40:11+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:40:11+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:40:11+0100] [Info]          |                                                            |
+[2024-12-03T19:40:11+0100] [Info]          |                                                            |
+[2024-12-03T19:40:11+0100] [Info]          ==============================================================
+[2024-12-03T19:40:11+0100] [Info]  
+[2024-12-03T19:40:11+0100] [Info]  
+[2024-12-03T19:40:11+0100] [Info]  ========================================== 
+[2024-12-03T19:40:11+0100] [Info]  |                                        | 
+[2024-12-03T19:40:11+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:40:11+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:40:11+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:40:11+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:40:11+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:40:11+0100] [Info]  |                                        | 
+[2024-12-03T19:40:11+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:40:11+0100] [Info]  |                                        | 
+[2024-12-03T19:40:11+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:40:11+0100] [Info]  |                                        | 
+[2024-12-03T19:40:11+0100] [Info]  |             Done in 141ms!             | 
+[2024-12-03T19:40:11+0100] [Info]  |                                        | 
+[2024-12-03T19:40:11+0100] [Info]  ========================================== 
+[2024-12-03T19:40:11+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:40:11+0100] [Info]  |                                        | 
+[2024-12-03T19:40:11+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:40:11+0100] [Info]  | Started:     03 Dec 2024 - 19:40:10    | 
+[2024-12-03T19:40:11+0100] [Info]  |                                        | 
+[2024-12-03T19:40:11+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:40:11+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:40:11+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:40:11+0100] [Info]  | Built:       03 Dec 2024 - 19:40:00    | 
+[2024-12-03T19:40:11+0100] [Info]  |                                        | 
+[2024-12-03T19:40:11+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:40:11+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:40:11+0100] [Info]  |                                        | 
+[2024-12-03T19:40:11+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:40:11+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:40:11+0100] [Info]  |                                        | 
+[2024-12-03T19:40:11+0100] [Info]  ========================================== 
+[2024-12-03T19:40:11+0100] [Info]  
+[2024-12-03T19:40:11+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:40:11+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:40:11+0100] [Info] [debug] #0 00007bd8 in ?? (0, 152, 45132400, 1598650688) in <unknown>
+[2024-12-03T19:40:11+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132432, 1598650688) in <unknown>
+[2024-12-03T19:40:11+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:40:11+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:40:11+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:40:11+0100] [Info]  
+[2024-12-03T19:40:11+0100] [Info] [MYSQL] Connected to database succesfully
+[2024-12-03T19:40:11+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:40:11+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:40:11+0100] [Info] [debug] #0 0006af6c in ?? () in <unknown>
+[2024-12-03T19:40:11+0100] [Info] [debug] #1 0001c450 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:40:11+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:40:11+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:40:11+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:40:11+0100] [Info] -                                     -
+[2024-12-03T19:40:11+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:40:11+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:40:11+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:40:11+0100] [Info] -                                     -
+[2024-12-03T19:40:11+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:40:11+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:40:11+0100] [Info] -                                     -
+[2024-12-03T19:40:11+0100] [Info] Legacy Network started on port 7777
+[2024-12-03T19:40:22+0100] [Info] Couldn't announce legacy network to open.mp list.
+[2024-12-03T19:40:22+0100] [Info] 	[Server Error] Status: 406
+[2024-12-03T19:40:22+0100] [Info] 	[Server Error] Message: {"error":"failed to query server: socket read timed out"}
+[2024-12-03T19:40:22+0100] [Info] This won't affect the server's behaviour.
+[2024-12-03T19:40:24+0100] [Info] [connection] incoming connection: 127.0.0.1:57831 id: 0
+[2024-12-03T19:40:24+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:40:28+0100] [Warning] Invalid dialog ID -1 used.  Use `HidePlayerDialog()`.
+[2024-12-03T19:40:36+0100] [Info] [part] Eros_Bosandzeros has left the server (0:1)
+[2024-12-03T19:41:12+0100] [Info] [connection] incoming connection: 127.0.0.1:62493 id: 0
+[2024-12-03T19:41:12+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:41:25+0100] [Info] [part] Eros_Bosandzeros has left the server (0:1)
+[2024-12-03T19:41:46+0100] [Info] [connection] incoming connection: 127.0.0.1:50570 id: 0
+[2024-12-03T19:41:46+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:41:49+0100] [Info] [debug] Run time error 4: "Array index out of bounds"
+[2024-12-03T19:41:49+0100] [Info] [debug]  Attempted to read/write array element at index 3 in array of size 3
+[2024-12-03T19:41:49+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:41:49+0100] [Info] [debug] #0 00067960 in public mysql_LoadFactionMember (0) in <unknown>
+[2024-12-03T19:45:55+0100] [Info] [part] Eros_Bosandzeros has left the server (0:1)
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:46:02+0100] [Info] 
+[2024-12-03T19:46:02+0100] [Info]  ===============================
+[2024-12-03T19:46:02+0100] [Info] 
+[2024-12-03T19:46:02+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:46:02+0100] [Info] 
+[2024-12-03T19:46:02+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:46:02+0100] [Info] 
+[2024-12-03T19:46:02+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:46:02+0100] [Info] 
+[2024-12-03T19:46:02+0100] [Info]  ===============================
+[2024-12-03T19:46:02+0100] [Info] 
+[2024-12-03T19:46:02+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:46:02+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:46:02+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:46:02+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:46:02+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:46:02+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:46:02+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:46:02+0100] [Info]  
+[2024-12-03T19:46:02+0100] [Info]  
+[2024-12-03T19:46:02+0100] [Info]          ==============================================================
+[2024-12-03T19:46:02+0100] [Info]          |                                                            |
+[2024-12-03T19:46:02+0100] [Info]          |                                                            |
+[2024-12-03T19:46:02+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:46:02+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:46:02+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:46:02+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:46:02+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:46:02+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:46:02+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:46:02+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:46:02+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:46:02+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:46:02+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:46:02+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:46:02+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:46:02+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:46:02+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:46:02+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:46:02+0100] [Info]          |                                                            |
+[2024-12-03T19:46:02+0100] [Info]          |                                                            |
+[2024-12-03T19:46:02+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:46:02+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:46:02+0100] [Info]          |                                                            |
+[2024-12-03T19:46:02+0100] [Info]          |                                                            |
+[2024-12-03T19:46:02+0100] [Info]          ==============================================================
+[2024-12-03T19:46:02+0100] [Info]  
+[2024-12-03T19:46:02+0100] [Info]  
+[2024-12-03T19:46:02+0100] [Info]  ========================================== 
+[2024-12-03T19:46:02+0100] [Info]  |                                        | 
+[2024-12-03T19:46:02+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:46:02+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:46:02+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:46:02+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:46:02+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:46:02+0100] [Info]  |                                        | 
+[2024-12-03T19:46:02+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:46:02+0100] [Info]  |                                        | 
+[2024-12-03T19:46:02+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:46:02+0100] [Info]  |                                        | 
+[2024-12-03T19:46:02+0100] [Info]  |             Done in 133ms!             | 
+[2024-12-03T19:46:02+0100] [Info]  |                                        | 
+[2024-12-03T19:46:02+0100] [Info]  ========================================== 
+[2024-12-03T19:46:02+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:46:02+0100] [Info]  |                                        | 
+[2024-12-03T19:46:02+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:46:02+0100] [Info]  | Started:     03 Dec 2024 - 19:46:02    | 
+[2024-12-03T19:46:02+0100] [Info]  |                                        | 
+[2024-12-03T19:46:02+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:46:02+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:46:02+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:46:02+0100] [Info]  | Built:       03 Dec 2024 - 19:40:00    | 
+[2024-12-03T19:46:02+0100] [Info]  |                                        | 
+[2024-12-03T19:46:02+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:46:02+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:46:02+0100] [Info]  |                                        | 
+[2024-12-03T19:46:02+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:46:02+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:46:02+0100] [Info]  |                                        | 
+[2024-12-03T19:46:02+0100] [Info]  ========================================== 
+[2024-12-03T19:46:02+0100] [Info]  
+[2024-12-03T19:46:02+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:46:02+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:46:02+0100] [Info] [debug] #0 00007bd8 in ?? (0, 152, 45132400, 1598650688) in <unknown>
+[2024-12-03T19:46:02+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132432, 1598650688) in <unknown>
+[2024-12-03T19:46:02+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:46:02+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:46:02+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:46:02+0100] [Info]  
+[2024-12-03T19:46:02+0100] [Info] [MYSQL] Connected to database succesfully
+[2024-12-03T19:46:02+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:46:02+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:46:02+0100] [Info] [debug] #0 0006af6c in ?? () in <unknown>
+[2024-12-03T19:46:02+0100] [Info] [debug] #1 0001c450 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:46:02+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:46:02+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:46:02+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:46:02+0100] [Info] -                                     -
+[2024-12-03T19:46:02+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:46:02+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:46:02+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:46:02+0100] [Info] -                                     -
+[2024-12-03T19:46:02+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:46:02+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:46:02+0100] [Info] -                                     -
+[2024-12-03T19:46:02+0100] [Error] Unable to start legacy network on port 7777. Port in use?
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:46:16+0100] [Info] 
+[2024-12-03T19:46:16+0100] [Info]  ===============================
+[2024-12-03T19:46:16+0100] [Info] 
+[2024-12-03T19:46:16+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:46:16+0100] [Info] 
+[2024-12-03T19:46:16+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:46:16+0100] [Info] 
+[2024-12-03T19:46:16+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:46:16+0100] [Info] 
+[2024-12-03T19:46:16+0100] [Info]  ===============================
+[2024-12-03T19:46:16+0100] [Info] 
+[2024-12-03T19:46:16+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:46:16+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:46:16+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:46:16+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:46:16+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:46:16+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:46:16+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:46:16+0100] [Info]  
+[2024-12-03T19:46:16+0100] [Info]  
+[2024-12-03T19:46:16+0100] [Info]          ==============================================================
+[2024-12-03T19:46:16+0100] [Info]          |                                                            |
+[2024-12-03T19:46:16+0100] [Info]          |                                                            |
+[2024-12-03T19:46:16+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:46:16+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:46:16+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:46:16+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:46:16+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:46:16+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:46:16+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:46:16+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:46:16+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:46:16+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:46:17+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:46:17+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:46:17+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:46:17+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:46:17+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:46:17+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:46:17+0100] [Info]          |                                                            |
+[2024-12-03T19:46:17+0100] [Info]          |                                                            |
+[2024-12-03T19:46:17+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:46:17+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:46:17+0100] [Info]          |                                                            |
+[2024-12-03T19:46:17+0100] [Info]          |                                                            |
+[2024-12-03T19:46:17+0100] [Info]          ==============================================================
+[2024-12-03T19:46:17+0100] [Info]  
+[2024-12-03T19:46:17+0100] [Info]  
+[2024-12-03T19:46:17+0100] [Info]  ========================================== 
+[2024-12-03T19:46:17+0100] [Info]  |                                        | 
+[2024-12-03T19:46:17+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:46:17+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:46:17+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:46:17+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:46:17+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:46:17+0100] [Info]  |                                        | 
+[2024-12-03T19:46:17+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:46:17+0100] [Info]  |                                        | 
+[2024-12-03T19:46:17+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:46:17+0100] [Info]  |                                        | 
+[2024-12-03T19:46:17+0100] [Info]  |             Done in 128ms!             | 
+[2024-12-03T19:46:17+0100] [Info]  |                                        | 
+[2024-12-03T19:46:17+0100] [Info]  ========================================== 
+[2024-12-03T19:46:17+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:46:17+0100] [Info]  |                                        | 
+[2024-12-03T19:46:17+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:46:17+0100] [Info]  | Started:     03 Dec 2024 - 19:46:16    | 
+[2024-12-03T19:46:17+0100] [Info]  |                                        | 
+[2024-12-03T19:46:17+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:46:17+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:46:17+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:46:17+0100] [Info]  | Built:       03 Dec 2024 - 19:40:00    | 
+[2024-12-03T19:46:17+0100] [Info]  |                                        | 
+[2024-12-03T19:46:17+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:46:17+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:46:17+0100] [Info]  |                                        | 
+[2024-12-03T19:46:17+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:46:17+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:46:17+0100] [Info]  |                                        | 
+[2024-12-03T19:46:17+0100] [Info]  ========================================== 
+[2024-12-03T19:46:17+0100] [Info]  
+[2024-12-03T19:46:17+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:46:17+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:46:17+0100] [Info] [debug] #0 00007bd8 in ?? (0, 152, 45132400, 1598650688) in <unknown>
+[2024-12-03T19:46:17+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132432, 1598650688) in <unknown>
+[2024-12-03T19:46:17+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:46:17+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:46:17+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:46:17+0100] [Info]  
+[2024-12-03T19:46:17+0100] [Info] [MYSQL] Connected to database succesfully
+[2024-12-03T19:46:17+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:46:17+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:46:17+0100] [Info] [debug] #0 0006af6c in ?? () in <unknown>
+[2024-12-03T19:46:17+0100] [Info] [debug] #1 0001c450 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:46:17+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:46:17+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:46:17+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:46:17+0100] [Info] -                                     -
+[2024-12-03T19:46:17+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:46:17+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:46:17+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:46:17+0100] [Info] -                                     -
+[2024-12-03T19:46:17+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:46:17+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:46:17+0100] [Info] -                                     -
+[2024-12-03T19:46:17+0100] [Info] Legacy Network started on port 7777
+[2024-12-03T19:46:27+0100] [Info] Couldn't announce legacy network to open.mp list.
+[2024-12-03T19:46:27+0100] [Info] 	[Server Error] Status: 406
+[2024-12-03T19:46:27+0100] [Info] 	[Server Error] Message: {"error":"failed to query server: socket read timed out"}
+[2024-12-03T19:46:27+0100] [Info] This won't affect the server's behaviour.
+[2024-12-03T19:46:31+0100] [Info] [connection] incoming connection: 127.0.0.1:56846 id: 0
+[2024-12-03T19:46:31+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:46:33+0100] [Warning] Invalid dialog ID -1 used.  Use `HidePlayerDialog()`.
+[2024-12-03T19:46:34+0100] [Info] [debug] Run time error 4: "Array index out of bounds"
+[2024-12-03T19:46:34+0100] [Info] [debug]  Attempted to read/write array element at index 3 in array of size 3
+[2024-12-03T19:46:34+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:46:34+0100] [Info] [debug] #0 00067960 in public mysql_LoadFactionMember (0) in <unknown>
+[2024-12-03T19:49:27+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2024-12-03T19:49:27+0100] [Info] plugin.mysql: Unloading plugin...
+[2024-12-03T19:49:27+0100] [Info] plugin.mysql: Plugin unloaded.
+[2024-12-03T19:49:27+0100] [Info] 
+[2024-12-03T19:49:27+0100] [Info]  ===============================
+[2024-12-03T19:49:27+0100] [Info] 
+[2024-12-03T19:49:27+0100] [Info]     sscanf component unloaded.  
+[2024-12-03T19:49:27+0100] [Info] 
+[2024-12-03T19:49:27+0100] [Info]  ===============================
+[2024-12-03T19:49:27+0100] [Info] 
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:49:45+0100] [Info] 
+[2024-12-03T19:49:45+0100] [Info]  ===============================
+[2024-12-03T19:49:45+0100] [Info] 
+[2024-12-03T19:49:45+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:49:45+0100] [Info] 
+[2024-12-03T19:49:45+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:49:45+0100] [Info] 
+[2024-12-03T19:49:45+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:49:45+0100] [Info] 
+[2024-12-03T19:49:45+0100] [Info]  ===============================
+[2024-12-03T19:49:45+0100] [Info] 
+[2024-12-03T19:49:45+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:49:45+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:49:45+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:49:45+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:49:45+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:49:45+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:49:45+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:49:45+0100] [Info]  
+[2024-12-03T19:49:45+0100] [Info]  
+[2024-12-03T19:49:45+0100] [Info]          ==============================================================
+[2024-12-03T19:49:45+0100] [Info]          |                                                            |
+[2024-12-03T19:49:45+0100] [Info]          |                                                            |
+[2024-12-03T19:49:45+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:49:45+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:49:45+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:49:45+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:49:45+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:49:45+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:49:45+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:49:45+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:49:45+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:49:45+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:49:45+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:49:45+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:49:45+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:49:45+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:49:45+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:49:45+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:49:45+0100] [Info]          |                                                            |
+[2024-12-03T19:49:45+0100] [Info]          |                                                            |
+[2024-12-03T19:49:45+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:49:45+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:49:45+0100] [Info]          |                                                            |
+[2024-12-03T19:49:45+0100] [Info]          |                                                            |
+[2024-12-03T19:49:45+0100] [Info]          ==============================================================
+[2024-12-03T19:49:45+0100] [Info]  
+[2024-12-03T19:49:45+0100] [Info]  
+[2024-12-03T19:49:45+0100] [Info]  ========================================== 
+[2024-12-03T19:49:45+0100] [Info]  |                                        | 
+[2024-12-03T19:49:45+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:49:45+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:49:45+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:49:45+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:49:45+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:49:45+0100] [Info]  |                                        | 
+[2024-12-03T19:49:45+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:49:45+0100] [Info]  |                                        | 
+[2024-12-03T19:49:45+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:49:45+0100] [Info]  |                                        | 
+[2024-12-03T19:49:45+0100] [Info]  |             Done in 132ms!             | 
+[2024-12-03T19:49:45+0100] [Info]  |                                        | 
+[2024-12-03T19:49:45+0100] [Info]  ========================================== 
+[2024-12-03T19:49:45+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:49:45+0100] [Info]  |                                        | 
+[2024-12-03T19:49:45+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:49:45+0100] [Info]  | Started:     03 Dec 2024 - 19:49:45    | 
+[2024-12-03T19:49:46+0100] [Info]  |                                        | 
+[2024-12-03T19:49:46+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:49:46+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:49:46+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:49:46+0100] [Info]  | Built:       03 Dec 2024 - 19:49:24    | 
+[2024-12-03T19:49:46+0100] [Info]  |                                        | 
+[2024-12-03T19:49:46+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:49:46+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:49:46+0100] [Info]  |                                        | 
+[2024-12-03T19:49:46+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:49:46+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:49:46+0100] [Info]  |                                        | 
+[2024-12-03T19:49:46+0100] [Info]  ========================================== 
+[2024-12-03T19:49:46+0100] [Info]  
+[2024-12-03T19:49:46+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:49:46+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:49:46+0100] [Info] [debug] #0 00007c7c in ?? (0, 162, 45132572, 1598650688) in <unknown>
+[2024-12-03T19:49:46+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132604, 1598650688) in <unknown>
+[2024-12-03T19:49:46+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:49:46+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:49:46+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:49:46+0100] [Info]  
+[2024-12-03T19:49:46+0100] [Info] [MYSQL] Connected to database succesfully
+[2024-12-03T19:49:46+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:49:46+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:49:46+0100] [Info] [debug] #0 0006b764 in ?? () in <unknown>
+[2024-12-03T19:49:46+0100] [Info] [debug] #1 0001c450 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:49:46+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:49:46+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:49:46+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:49:46+0100] [Info] -                                     -
+[2024-12-03T19:49:46+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:49:46+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:49:46+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:49:46+0100] [Info] -                                     -
+[2024-12-03T19:49:46+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:49:46+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:49:46+0100] [Info] -                                     -
+[2024-12-03T19:49:46+0100] [Info] Legacy Network started on port 7777
+[2024-12-03T19:49:57+0100] [Info] Couldn't announce legacy network to open.mp list.
+[2024-12-03T19:49:57+0100] [Info] 	[Server Error] Status: 406
+[2024-12-03T19:49:57+0100] [Info] 	[Server Error] Message: {"error":"failed to query server: socket read timed out"}
+[2024-12-03T19:49:57+0100] [Info] This won't affect the server's behaviour.
+[2024-12-03T19:50:01+0100] [Info] [connection] incoming connection: 127.0.0.1:52198 id: 0
+[2024-12-03T19:50:01+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:50:03+0100] [Warning] Invalid dialog ID -1 used.  Use `HidePlayerDialog()`.
+[2024-12-03T19:50:04+0100] [Info] [debug] Run time error 4: "Array index out of bounds"
+[2024-12-03T19:50:04+0100] [Info] [debug]  Attempted to read/write array element at index 3 in array of size 3
+[2024-12-03T19:50:04+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:50:04+0100] [Info] [debug] #0 00067960 in public mysql_LoadFactionMember (0) in <unknown>
+[2024-12-03T19:51:07+0100] [Info] [part] Eros_Bosandzeros has left the server (0:1)
+Starting open.mp server (1.2.0.2670) from commit 41ebf182bf73dc9cb11841bfe6b0179ba31f9dd5
+Loading component Actors.dll
+	Successfully loaded component Actors (1.2.0.2670) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.2.0.2670) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.2.0.2670) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.2.0.2670) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.2.0.2670) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.2.0.2670) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.2.0.2670) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.2.0.2670) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.2.0.2670) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.2.0.2670) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.2.0.2670) with UID 621e219eb97ee0b2
+Loading component Objects.dll
+	Successfully loaded component Objects (1.2.0.2670) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.2.0.2670) with UID 78906cd9f19c36a6
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.2.0.2670) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.2.0.2670) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.2.0.2670) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.2.0.2670) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.2.0.2670) with UID 2ad8124c5ea257a3
+Loading component Unicode.dll
+	Successfully loaded component Unicode (1.2.0.2670) with UID 8ffb446f8353922b
+Loading component Variables.dll
+	Successfully loaded component Variables (1.2.0.2670) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.2.0.2670) with UID 3f1f62ee9e22ab19
+Loaded 22 component(s) from E:\Code\Github\reliant-omp\components
+[2024-12-03T19:51:23+0100] [Info] 
+[2024-12-03T19:51:23+0100] [Info]  ===============================
+[2024-12-03T19:51:23+0100] [Info] 
+[2024-12-03T19:51:23+0100] [Info]      sscanf component loaded.   
+[2024-12-03T19:51:23+0100] [Info] 
+[2024-12-03T19:51:23+0100] [Info]          Version: 2.13.8
+[2024-12-03T19:51:23+0100] [Info] 
+[2024-12-03T19:51:23+0100] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2024-12-03T19:51:23+0100] [Info] 
+[2024-12-03T19:51:23+0100] [Info]  ===============================
+[2024-12-03T19:51:23+0100] [Info] 
+[2024-12-03T19:51:23+0100] [Info] Loading plugin: crashdetect
+[2024-12-03T19:51:23+0100] [Info]   CrashDetect plugin 4.21
+[2024-12-03T19:51:23+0100] [Info] Loading plugin: mysql
+[2024-12-03T19:51:23+0100] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2024-12-03T19:51:23+0100] [Info] Loading plugin: streamer
+[2024-12-03T19:51:23+0100] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2024-12-03T19:51:23+0100] [Info] *** Streamer Plugin: The plugin version (0x295) is older than the include file version (0x296) for this script. The plugin might need to be updated to the latest version.
+[2024-12-03T19:51:23+0100] [Info]  
+[2024-12-03T19:51:23+0100] [Info]  
+[2024-12-03T19:51:23+0100] [Info]          ==============================================================
+[2024-12-03T19:51:23+0100] [Info]          |                                                            |
+[2024-12-03T19:51:23+0100] [Info]          |                                                            |
+[2024-12-03T19:51:23+0100] [Info]          |    YYYYYYY       YYYYYYY    SSSSSSSSSSSSSSS  IIIIIIIIII    |
+[2024-12-03T19:51:23+0100] [Info]          |    Y:::::Y       Y:::::Y  SS:::::::::::::::S I::::::::I    |
+[2024-12-03T19:51:23+0100] [Info]          |    Y:::::Y       Y:::::Y S:::::SSSSSS::::::S I::::::::I    |
+[2024-12-03T19:51:23+0100] [Info]          |    Y::::::Y     Y::::::Y S:::::S     SSSSSSS II::::::II    |
+[2024-12-03T19:51:23+0100] [Info]          |    YYY:::::Y   Y:::::YYY S:::::S               I::::I      |
+[2024-12-03T19:51:23+0100] [Info]          |       Y:::::Y Y:::::Y    S:::::S               I::::I      |
+[2024-12-03T19:51:23+0100] [Info]          |        Y:::::Y:::::Y      S::::SSSS            I::::I      |
+[2024-12-03T19:51:23+0100] [Info]          |         Y:::::::::Y        SS::::::SSSSS       I::::I      |
+[2024-12-03T19:51:23+0100] [Info]          |          Y:::::::Y           SSS::::::::SS     I::::I      |
+[2024-12-03T19:51:23+0100] [Info]          |           Y:::::Y               SSSSSS::::S    I::::I      |
+[2024-12-03T19:51:23+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:51:23+0100] [Info]          |           Y:::::Y                    S:::::S   I::::I      |
+[2024-12-03T19:51:23+0100] [Info]          |           Y:::::Y        SSSSSSS     S:::::S II::::::II    |
+[2024-12-03T19:51:23+0100] [Info]          |        YYYY:::::YYYY     S::::::SSSSSS:::::S I::::::::I    |
+[2024-12-03T19:51:23+0100] [Info]          |        Y:::::::::::Y     S:::::::::::::::SS  I::::::::I    |
+[2024-12-03T19:51:23+0100] [Info]          |        YYYYYYYYYYYYY      SSSSSSSSSSSSSSS    IIIIIIIIII    |
+[2024-12-03T19:51:23+0100] [Info]          |                                                            |
+[2024-12-03T19:51:23+0100] [Info]          |                                                            |
+[2024-12-03T19:51:23+0100] [Info]          |                      (c) 2021 MPL v1.1                     |
+[2024-12-03T19:51:23+0100] [Info]          |            Alex "Y_Less" Cole and contributors.            |
+[2024-12-03T19:51:23+0100] [Info]          |                                                            |
+[2024-12-03T19:51:23+0100] [Info]          |                                                            |
+[2024-12-03T19:51:23+0100] [Info]          ==============================================================
+[2024-12-03T19:51:23+0100] [Info]  
+[2024-12-03T19:51:23+0100] [Info]  
+[2024-12-03T19:51:23+0100] [Info]  ========================================== 
+[2024-12-03T19:51:23+0100] [Info]  |                                        | 
+[2024-12-03T19:51:23+0100] [Info]  |   Generating code, this may take a     | 
+[2024-12-03T19:51:23+0100] [Info]  |  little bit of time.  Note that this   | 
+[2024-12-03T19:51:23+0100] [Info]  |  code generation works best with the   | 
+[2024-12-03T19:51:23+0100] [Info]  |     JIT plugin, which you are not      | 
+[2024-12-03T19:51:23+0100] [Info]  |     currently using.  Get it here:     | 
+[2024-12-03T19:51:23+0100] [Info]  |                                        | 
+[2024-12-03T19:51:23+0100] [Info]  |       https://git.io/jit-plugin        | 
+[2024-12-03T19:51:23+0100] [Info]  |                                        | 
+[2024-12-03T19:51:23+0100] [Info]  |             Please wait...             | 
+[2024-12-03T19:51:23+0100] [Info]  |                                        | 
+[2024-12-03T19:51:23+0100] [Info]  |             Done in 133ms!             | 
+[2024-12-03T19:51:23+0100] [Info]  |                                        | 
+[2024-12-03T19:51:23+0100] [Info]  ========================================== 
+[2024-12-03T19:51:23+0100] [Info] *** YSI Info: Script ID: 1
+[2024-12-03T19:51:23+0100] [Info]  |                                        | 
+[2024-12-03T19:51:23+0100] [Info]  | Server:      open.mp 1.2.0.2670 (W)    | 
+[2024-12-03T19:51:23+0100] [Info]  | Started:     03 Dec 2024 - 19:51:23    | 
+[2024-12-03T19:51:23+0100] [Info]  |                                        | 
+[2024-12-03T19:51:23+0100] [Info]  | Compiler:    3.10.11 (Windows)         | 
+[2024-12-03T19:51:23+0100] [Info]  | Includes:    open.mp v037030           | 
+[2024-12-03T19:51:23+0100] [Info]  | Codepage:    <none>                    | 
+[2024-12-03T19:51:23+0100] [Info]  | Built:       03 Dec 2024 - 19:50:57    | 
+[2024-12-03T19:51:23+0100] [Info]  |                                        | 
+[2024-12-03T19:51:23+0100] [Info]  | YSI:         v05.10.0006               | 
+[2024-12-03T19:51:23+0100] [Info]  | Master:      1                         | 
+[2024-12-03T19:51:23+0100] [Info]  |                                        | 
+[2024-12-03T19:51:23+0100] [Info]  | JIT:         <none>                    | 
+[2024-12-03T19:51:23+0100] [Info]  | Crashdetect: <found>                   | 
+[2024-12-03T19:51:23+0100] [Info]  |                                        | 
+[2024-12-03T19:51:23+0100] [Info]  ========================================== 
+[2024-12-03T19:51:23+0100] [Info]  
+[2024-12-03T19:51:23+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:51:23+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:51:23+0100] [Info] [debug] #0 00007c7c in ?? (0, 134, 45132572, 1598650688) in <unknown>
+[2024-12-03T19:51:23+0100] [Info] [debug] #1 00007d80 in ?? (0, 0, 45132604, 1598650688) in <unknown>
+[2024-12-03T19:51:23+0100] [Info] [debug] #2 0000c64c in ?? () in <unknown>
+[2024-12-03T19:51:23+0100] [Info] [debug] #3 00004ac8 in ?? () in <unknown>
+[2024-12-03T19:51:23+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:51:23+0100] [Info]  
+[2024-12-03T19:51:23+0100] [Info] [MYSQL] Connected to database succesfully
+[2024-12-03T19:51:23+0100] [Info] [debug] Long callback execution detected (hang or performance issue)
+[2024-12-03T19:51:23+0100] [Info] [debug] AMX backtrace:
+[2024-12-03T19:51:23+0100] [Info] [debug] #0 00069f1c in ?? () in <unknown>
+[2024-12-03T19:51:23+0100] [Info] [debug] #1 0001c450 in public OnScriptInit@E () in <unknown>
+[2024-12-03T19:51:23+0100] [Info] [debug] #2 native CallLocalFunction () in Pawn.dll
+[2024-12-03T19:51:23+0100] [Info] [debug] #3 00004b9c in ?? () in <unknown>
+[2024-12-03T19:51:23+0100] [Info] [debug] #4 00001bb4 in public OnScriptCash () in <unknown>
+[2024-12-03T19:51:23+0100] [Info] -                                     -
+[2024-12-03T19:51:23+0100] [Info]  Version : v0.1 - Reliant
+[2024-12-03T19:51:23+0100] [Info]  Developer : Vostic & Nodi
+[2024-12-03T19:51:23+0100] [Info]  Credits : open.mp community, pBlueG, Y-Less, incognito..
+[2024-12-03T19:51:23+0100] [Info] -                                     -
+[2024-12-03T19:51:23+0100] [Info] > Gamemode Starting...
+[2024-12-03T19:51:23+0100] [Info] >> Reliant Gamemode Started
+[2024-12-03T19:51:23+0100] [Info] -                                     -
+[2024-12-03T19:51:23+0100] [Info] Legacy Network started on port 7777
+[2024-12-03T19:51:34+0100] [Info] Couldn't announce legacy network to open.mp list.
+[2024-12-03T19:51:34+0100] [Info] 	[Server Error] Status: 406
+[2024-12-03T19:51:34+0100] [Info] 	[Server Error] Message: {"error":"failed to query server: socket read timed out"}
+[2024-12-03T19:51:34+0100] [Info] This won't affect the server's behaviour.
+[2024-12-03T19:51:41+0100] [Info] [connection] incoming connection: 127.0.0.1:51721 id: 0
+[2024-12-03T19:51:41+0100] [Info] [join] Eros_Bosandzeros has joined the server (0:127.0.0.1)
+[2024-12-03T19:51:44+0100] [Warning] Invalid dialog ID -1 used.  Use `HidePlayerDialog()`.
+[2024-12-03T19:53:30+0100] [Info] [part] Eros_Bosandzeros has left the server (0:1)

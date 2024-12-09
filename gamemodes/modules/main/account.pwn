@@ -37,6 +37,8 @@ enum e_PLAYER_DATA {
     Staff,
     Money,
     Introduction
+
+    // e_JOB_ID:Job
 }
 
 new UserInfo[MAX_PLAYERS][e_PLAYER_DATA];
@@ -60,8 +62,9 @@ timer timer_SpawnPlayer[400](playerid, spawnType)
         SetSpawnInfo(playerid, NO_TEAM, UserInfo[playerid][Skin], 167.1225,-160.3572,6.7786,91.0767, WEAPON_UNKNOWN, 0, WEAPON_UNKNOWN, 0, WEAPON_UNKNOWN, 0);
         SetPlayerVirtualWorld(playerid, 0);
         SetPlayerInterior(playerid, 0);
-
         SpawnPlayer(playerid);
+
+        CallLocalFunction("OnPlayerLoaded", "d", playerid);
     }
 
     return (true);
@@ -132,6 +135,7 @@ public mysql_LoadAccount(playerid) {
     cache_get_value_name_int(0, "Staff", UserInfo[playerid][Staff]);
     cache_get_value_name_int(0, "Money", UserInfo[playerid][Money]);
     cache_get_value_name_int(0, "Introduction", UserInfo[playerid][Introduction]);
+    // cache_get_value_name_int(0, "Job", UserInfo[playerid][Job]);
 
     SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"%s, lijepo vas je vidjeti opet.", ReturnPlayerName(playerid));
     SendClientMessage(playerid, x_server, "R E L I A N T | "c_white"Ukoliko vam je potrebna pomoc"c_server" /askq.");
@@ -140,7 +144,6 @@ public mysql_LoadAccount(playerid) {
     GivePlayerMoney(playerid, UserInfo[playerid][Money]);
 
     defer timer_SpawnPlayer(playerid, SPAWN_TYPE_LOGIN);
-    CallLocalFunction("OnPlayerLoaded", "d", playerid);
 
 
     return (true);
@@ -232,11 +235,12 @@ Dialog:account_Email(const playerid, response, listitem, string: inputtext[]) {
 
     UserInfo[playerid][Money] = 3500;
     UserInfo[playerid][Introduction] = 0;
+    // UserInfo[playerid][Job] = INVALID_JOB_ID;
 
     new q[888];
 
     mysql_format(MySQL:SQL, q, sizeof q, "INSERT INTO `users` (`Password`, `Username`, `Age`, `Gender`, `eMail`, `Score`, `Skin`, `Staff`, `Money`, `Introduction`) \
-                                          VALUES ('%e', '%e', '%d', '%d', '%e', '1', '%d', '0', '3500', 0)",
+                                          VALUES ('%e', '%e', '%d', '%d', '%e', '1', '%d', '0', '3500', 0, '%d')",
                                           UserInfo[playerid][Password], ReturnPlayerName(playerid),
                                           UserInfo[playerid][Age], UserInfo[playerid][Gender],
                                           UserInfo[playerid][eMail], UserInfo[playerid][Skin]);

@@ -485,6 +485,10 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 #include "modules/real_estate/main.pwn"
 #include "modules/real_estate/player_data.pwn"
 
+// * 		>> [ FACTIONS ] <<
+
+#include "modules/factions/_core.pwn"
+
 //*			>> [ MAPS - INTERIORS ] <<
 
 #include "maps/hospital-interior.pwn"
